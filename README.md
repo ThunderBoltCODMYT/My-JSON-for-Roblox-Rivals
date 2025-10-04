@@ -114,9 +114,9 @@
 > [!NOTE]
 > I Know my JSON has many of the `FFlags` that are not in the whitelist but I have made this repo just for the purpose that people can atleast test this JSON in rivals and tell me if it gets them better FPS.
 
-# Bloxstrap or any BootStrapper in general, How to Use:
-1. Open the [Bloxstrap Menu](https://github.com/pizzaboxer/bloxstrap).
-2. Navigate to Fast Flags >> Fast Flags Editor >> Import Json.
+#any BootStrapper in general, How to Use:
+1. Open the Bootstrapper Software.
+2. Navigate to Fast Flags Editor >> Import Json.
 3. Paste in the JSON.
 4. Save and your good to go!
 
@@ -126,6 +126,11 @@
 3. Download ClientSettings Folder and put it in folder you opened before
 4. Save and your good to go!
 
+> [!NOTE]
+>As of the change made by roblox on September 29, 2025 with that a broader purge was taken to disable most of the engine-level rendering flags >if you have been wondering where the fast flags editor option went in bloxstrap this is the reason roblox did this to prevent unauthorised >client-side Manipulation From Roblox's Perspective some fastflags like FIntRenderShadowIntensity were disabled because:
+>> - It bypassed their engines intended lighting pipeline.
+>> - and could be used to gain unfair performance and visual advantages.
+> And because of this when the ui update came in bloxstrap v2.9.0 they removed the fast flag editor and now the latest version is v2.10.0 and they have completely removed the `FFlags` editor option from the ui as a part of this purge Right now it is reccommended that you use any other bootstrapper than bloxstrap but the whitelist however is enforced on all so the fflags not in the whitelist will not work not even if you manually edit ClientSettings.json .
 
 ```
 Roblox Installation Directory
