@@ -120,12 +120,273 @@
 3. Paste in the JSON.
 4. Save and your good to go!
 
+# Normal Roblox Bootstrapper How to Use:
+1. Navigate to your Roblox Installation directory. Typically found at %localappdata%\Roblox\Versions\ for Windows or C:\Program Files (x86)\Roblox\Versions.
+2. Identify the folder version-xxxxxxxxxxxxxxxx containing RobloxPlayerBeta.exe You can do this for Roblox Studio too.
+3. Download ClientSettings Folder and put it in folder you opened before
+4. Save and your good to go!
+
+
+```
+Roblox Installation Directory
+└── Versions
+    └── version-xxxxxxxxxxxxxxxx
+        ├── RobloxPlayerBeta.exe
+        └── ClientSettings
+            └── ClientAppSettings.json
+
+```
+
 > [!CAUTION]
-> USE THEM AT YOUR OWN RISK  
-<hr size="5px" width="100%">
-<html>
-  <body>
-    <h1>My FFlags</h1>
-    <p>Before this, I just wanna say that you can use any bootstrapper you want bloxstrap, Plexity, FishTrap, FrostStrap but either way it will not change how the <code>FFlags</code> take effect, however the amount of fps you get may be different depending on the bootstrapper you are using.</p>
-  </body>
-</html>
+> USE THEM AT YOUR OWN RISK
+
+---
+
+# My FFlags  
+Before you see the Fast Flags important points:
+> - It does not matter on which bootstrapper you are using , it will not change how the fast flags take effect.
+> - However the amount of FPS you get might differ depending on the bootstrapper you are using.
+
+## Actual JSON Code:
+```json
+{
+    "DFIntTaskSchedulerTargetFps": "5588562",
+    "FIntRuntimeMaxNumOfThreads": "2400",
+    "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
+    "DFFlagTextureQualityOverrideEnabled": "True",
+    "DFIntCullFactorPixelThresholdShadowMapHighQuality": "2147483647",
+    "DFIntCullFactorPixelThresholdShadowMapLowQuality": "2147483647",
+    "DFIntTextureQualityOverride": "3",
+    "FIntDebugForceMSAASamples": "1",
+    "FIntRenderGrassDetailStrands": "0",
+    "FIntRenderLocalLightFadeInMs": "0",
+    "FIntRenderLocalLightUpdatesMax": "1",
+    "FIntRenderLocalLightUpdatesMin": "1",
+    "FIntRenderShadowIntensity": "0",
+    "FIntRenderShadowmapBias": "75",
+    "FLogNetwork": "7",
+    "FFlagDebugDisplayFPS": "False",
+    "FFlagDebugGraphicsPreferD3D11": "True",
+    "FFlagDebugGraphicsPreferD3D11FL11": "True",
+    "FFlagDisablePostFx": "True",
+    "FFlagHandleAltEnterFullscreenManually": "False",
+    "FFlagUserHideCharacterParticlesInFirstPerson": "True",
+    "DFFlagDebugPauseVoxelizer": "True",
+    "DFFlagDebugRenderForceTechnologyVoxel": "True",
+    "FIntTerrainArraySliceSize": "0",
+    "DFIntDebugFRMQualityLevelOverride": "3",
+    "FIntFRMMaxGrassDistance": "0",
+    "FIntFRMMinGrassDistance": "0",
+    "FFlagDebugForceFSMCPULightCulling": "True",
+    "FFlagNewLightAttenuation": "True",
+    "FIntDebugTextureManagerSkipMips": "0",
+    "FFlagDebugCheckRenderThreading": "True",
+    "FFlagDebugForceFutureIsBrightPhase2": "True",
+    "FFlagDebugRenderingSetDeterministic": "True",
+    "FFlagRenderDebugCheckThreading2": "True",
+    "FFlagDebugSkyGray": "True",
+    "FIntFontSizePadding": "4",
+    "FIntFullscreenTitleBarTriggerDelayMillis": "3600000",
+    "FFlagDebugDisableTelemetryEphemeralCounter": "True",
+    "FFlagDebugDisableTelemetryEphemeralStat": "True",
+    "FFlagDebugDisableTelemetryEventIngest": "True",
+    "FFlagDebugDisableTelemetryPoint": "True",
+    "FFlagDebugDisableTelemetryV2Counter": "True",
+    "FFlagDebugDisableTelemetryV2Event": "True",
+    "FFlagDebugDisableTelemetryV2Stat": "True",
+    "DFIntConnectionMTUSize": 900,
+    "FIntRakNetResendBufferArrayLength": "128",
+    "FFlagOptimizeNetwork": "True",
+    "FFlagOptimizeNetworkRouting": "True",
+    "FFlagOptimizeNetworkTransport": "True",
+    "FFlagOptimizeServerTickRate": "True",
+    "DFIntServerPhysicsUpdateRate": "60",
+    "DFIntServerTickRate": "60",
+    "DFIntRakNetResendRttMultiple": "1",
+    "DFIntRaknetBandwidthPingSendEveryXSeconds": "1",
+    "DFIntOptimizePingThreshold": "50",
+    "DFIntPlayerNetworkUpdateQueueSize": "20",
+    "DFIntPlayerNetworkUpdateRate": "60",
+    "DFIntNetworkPrediction": "120",
+    "DFIntNetworkLatencyTolerance": "1",
+    "DFIntMinimalNetworkPrediction": "0.1",
+    "DFIntCSGLevelOfDetailSwitchingDistance": 250,
+    "DFIntCSGLevelOfDetailSwitchingDistanceL12": 500,
+    "DFIntCSGLevelOfDetailSwitchingDistanceL23": 750,
+    "DFIntCSGLevelOfDetailSwitchingDistanceL34": 1000
+}
+```
+---
+
+🔧 Order Navigation List
+
+- [Graphics & Rendering](#Graphics-&-Rendering-(Highest-Priority))
+- [Engine, Voxel, Terrain, FRM, Threading](#Engine,-Voxel,-Terrain,-FRM,-Threading-(Medium-Priority))
+- [Telemetry & Debug Logging](#Telemetry-&-Debug-Logging-(Medium-Priority))
+- [Network & CSG (Lower Priority)](#Network-&-CSG-(Lower-Priority))
+
+---
+
+Subsystem-Based Sections (Ordered by Priority)
+
+Graphics & Rendering (Highest Priority)
+  
+```json
+{
+  "DFIntTaskSchedulerTargetFps": "5588562",
+  "FIntRuntimeMaxNumOfThreads": "2400",
+  "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
+  "FFlagDisablePostFx": "True",
+  "FIntRenderShadowIntensity": "0",
+  "FIntRenderShadowmapBias": "75",
+  "FIntRenderLocalLightUpdatesMax": "1",
+  "FIntRenderLocalLightUpdatesMin": "1",
+  "FIntRenderLocalLightFadeInMs": "0",
+  "FIntRenderGrassDetailStrands": "0",
+  "DFIntCullFactorPixelThresholdShadowMapHighQuality": "2147483647",
+  "DFIntCullFactorPixelThresholdShadowMapLowQuality": "2147483647",
+  "DFIntTextureQualityOverride": "3",
+  "DFFlagTextureQualityOverrideEnabled": "True",
+  "FIntDebugForceMSAASamples": "1",
+  "FFlagDebugGraphicsPreferD3D11": "True",
+  "FFlagDebugGraphicsPreferD3D11FL11": "True",
+  "FFlagDebugForceFutureIsBrightPhase2": "True",
+  "FFlagDebugForceFSMCPULightCulling": "True",
+  "FFlagNewLightAttenuation": "True",
+  "FIntDebugTextureManagerSkipMips": "0",
+  "FIntFontSizePadding": "4",
+  "FIntFullscreenTitleBarTriggerDelayMillis": "3600000"
+}
+```
+
+
+Engine, Voxel, Terrain, FRM, Threading (Medium Priority)
+
+```json
+{
+  "DFFlagDebugPauseVoxelizer": "True",
+  "DFFlagDebugRenderForceTechnologyVoxel": "True",
+  "FIntTerrainArraySliceSize": "0",
+  "DFIntDebugFRMQualityLevelOverride": "3",
+  "FIntFRMMaxGrassDistance": "0",
+  "FIntFRMMinGrassDistance": "0",
+  "FFlagDebugRenderingSetDeterministic": "True",
+  "FFlagRenderDebugCheckThreading2": "True",
+  "FFlagDebugCheckRenderThreading": "True"
+}
+```
+
+Telemetry & Debug Logging (Medium Priority)
+
+```json
+{
+  "FFlagDebugDisableTelemetryEphemeralCounter": "True",
+  "FFlagDebugDisableTelemetryEphemeralStat": "True",
+  "FFlagDebugDisableTelemetryEventIngest": "True",
+  "FFlagDebugDisableTelemetryPoint": "True",
+  "FFlagDebugDisableTelemetryV2Counter": "True",
+  "FFlagDebugDisableTelemetryV2Event": "True",
+  "FFlagDebugDisableTelemetryV2Stat": "True",
+  "FFlagDebugSkyGray": "True",
+  "FFlagDebugDisplayFPS": "False",
+  "FFlagUserHideCharacterParticlesInFirstPerson": "True",
+  "FFlagHandleAltEnterFullscreenManually": "False"
+}
+```
+
+Network & CSG (Lower Priority)
+
+```json
+{
+  "FLogNetwork": "7",
+  "DFIntConnectionMTUSize": 900,
+  "FIntRakNetResendBufferArrayLength": "128",
+  "FFlagOptimizeNetwork": "True",
+  "FFlagOptimizeNetworkRouting": "True",
+  "FFlagOptimizeNetworkTransport": "True",
+  "FFlagOptimizeServerTickRate": "True",
+  "DFIntServerPhysicsUpdateRate": "60",
+  "DFIntServerTickRate": "60",
+  "DFIntRakNetResendRttMultiple": "1",
+  "DFIntRaknetBandwidthPingSendEveryXSeconds": "1",
+  "DFIntOptimizePingThreshold": "50",
+  "DFIntPlayerNetworkUpdateQueueSize": "20",
+  "DFIntPlayerNetworkUpdateRate": "60",
+  "DFIntNetworkPrediction": "120",
+  "DFIntNetworkLatencyTolerance": "1",
+  "DFIntMinimalNetworkPrediction": "0.1",
+  "DFIntCSGLevelOfDetailSwitchingDistance": 250,
+  "DFIntCSGLevelOfDetailSwitchingDistanceL12": 500,
+  "DFIntCSGLevelOfDetailSwitchingDistanceL23": 750,
+  "DFIntCSGLevelOfDetailSwitchingDistanceL34": 1000
+}
+```
+
+--------------------------
+
+<h1>Meaning and effect of every Fast Flag</h1>
+
+🎮 Task Scheduling and Threading
+> `DFIntTaskSchedulerFPS` : Sets the target FPS for the task scheduler. A high value like 5588562 effectively removes the FPS cap, allowing the client to run at maximum possible frame rate.  
+> `FIntRuntimeMaxNumOfThreads` : Defines the maximum number of threads the runtime can use. Setting this to 2400 enables aggressive multithreading, improving performance on multi-core systems.  
+> `FFlagTaskSchedulerLimitTargetFpsTo2402` : When False, disables the internal FPS limit of 2402, allowing full override via `DFIntTaskSchedulerTargetFps`.
+
+🖼️ Graphics & Rendering
+- DFFlagTextureQualityOverrideEnabled: Enables manual control over texture quality settings.
+- DFIntTextureQualityOverride: Sets the texture quality level. 3 typically corresponds to high quality.
+- DFIntCullFactorPixelThresholdShadowMapHighQuality / LowQuality: Maxes out the pixel threshold for shadow map culling, ensuring shadows are always rendered regardless of pixel density.
+- FIntDebugForceMSAASamples: Forces Multi-Sample Anti-Aliasing (MSAA) with 1 sample. This can reduce aliasing but may impact performance.
+- FIntRenderGrassDetailStrands: Disables grass strand rendering by setting it to 0, improving performance.
+- FIntRenderLocalLightFadeInMs: Sets light fade-in time to 0, making lighting transitions instant.
+- FIntRenderLocalLightUpdatesMax / Min: Limits local light updates to 1, reducing lighting computation overhead.
+- FIntRenderShadowIntensity: Sets shadow intensity to 0, effectively disabling shadows.
+- FIntRenderShadowmapBias: Adjusts shadow bias to 75, which can reduce shadow artifacts.
+- FFlagDisablePostFx: Disables post-processing effects like bloom and blur, improving clarity and performance.
+- FFlagDebugGraphicsPreferD3D11 / D3D11FL11: Forces the client to prefer DirectX 11 rendering, which is more stable and performant on modern systems.
+- FFlagDebugSkyGray: Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
+- FIntFontSizePadding: Sets padding around fonts, which may affect UI rendering.
+- FIntFullscreenTitleBarTriggerDelayMillis: Delays fullscreen title bar triggers. A high value like 3600000 effectively disables it.
+
+🧪 Debug & Determinism
+- FFlagDebugDisplayFPS: When False, hides the FPS counter.
+- FFlagDebugForceFutureIsBrightPhase2: Forces the newer lighting system for consistency and testing.
+- FFlagDebugForceFSMCPULightCulling: Enables CPU-based light culling, which may improve performance in certain scenes.
+- FFlagNewLightAttenuation: Enables improved light attenuation calculations for more realistic lighting.
+- FIntDebugTextureManagerSkipMips: Controls mipmap skipping. 0 disables skipping, ensuring full texture detail.
+- FFlagDebugCheckRenderThreading / RenderDebugCheckThreading2: Enables threading checks for render operations, useful for debugging performance bottlenecks.
+- FFlagDebugRenderingSetDeterministic: Forces deterministic rendering behavior, useful for debugging and consistency.
+- FFlagHandleAltEnterFullscreenManually: When False, disables manual handling of Alt+Enter fullscreen toggling.
+- FFlagUserHideCharacterParticlesInFirstPerson: Hides character particle effects in first-person view, improving visibility and performance.
+
+🧱 Terrain & Voxel
+- DFFlagDebugPauseVoxelizer: Pauses the voxelizer, reducing background processing load.
+- DFFlagDebugRenderForceTechnologyVoxel: Forces voxel-based rendering, which may simplify lighting and geometry calculations.
+- FIntTerrainArraySliceSize: Controls terrain slice size. 0 disables slicing, reducing terrain complexity.
+- DFIntDebugFRMQualityLevelOverride: Overrides the FRM (Fast Rendering Mode) quality level. 3 typically corresponds to high quality.
+- FIntFRMMaxGrassDistance / MinGrassDistance: Sets grass rendering distance to 0, disabling grass rendering entirely.
+
+📡 Telemetry & Analytics
+- FFlagDebugDisableTelemetryEphemeralCounter / Stat / EventIngest / Point / V2Counter / V2Event / V2Stat: Disables various telemetry systems, reducing background data collection and potential performance overhead.
+
+🌐 Networking
+- FLogNetwork: Sets network logging level to 7, which is typically verbose for debugging.
+- DFIntConnectionMTUSize: Sets the maximum transmission unit size to 900, optimizing packet size for network performance.
+- FIntRakNetResendBufferArrayLength: Controls the buffer size for RakNet resends. 128 is a moderate value for stability.
+- FFlagOptimizeNetwork / Routing / Transport / ServerTickRate: Enables various network optimizations for routing, transport, and server update frequency.
+- DFIntServerPhysicsUpdateRate / ServerTickRate: Sets server update rates to 60Hz, ensuring smooth physics and game logic processing.
+- DFIntRakNetResendRttMultiple: Controls resend timing based on round-trip time. 1 is minimal delay.
+- DFIntRaknetBandwidthPingSendEveryXSeconds: Sends ping every second for tighter latency tracking.
+- DFIntOptimizePingThreshold: Sets ping optimization threshold to 50ms, improving responsiveness.
+- DFIntPlayerNetworkUpdateQueueSize / UpdateRate: Controls how often and how much player data is sent over the network.
+- DFIntNetworkPrediction / LatencyTolerance / MinimalNetworkPrediction: Fine-tunes prediction and latency handling for smoother movement and sync.
+
+🧱 Geometry & CSG
+- DFIntCSGLevelOfDetailSwitchingDistance / L12 / L23 / L34: Controls when level-of-detail (LOD) switches occur for Constructive Solid Geometry. Higher values delay LOD transitions, preserving visual fidelity.
+
+Sources:
+GitHub: Roblox Performance FFlags
+Roblox DevForum: Fast Flag Allowlist
+Bloxstrap FastFlags Guide
+Stoofis Fast Flags
+Dantezz025/Roblox-Fast-Flags
+
