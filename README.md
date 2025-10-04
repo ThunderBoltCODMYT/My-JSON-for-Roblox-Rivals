@@ -331,62 +331,63 @@ Network & CSG (Lower Priority)
 > `FIntRuntimeMaxNumOfThreads` : Defines the maximum number of threads the runtime can use. Setting this to 2400 enables aggressive multithreading, improving performance on multi-core systems.  
 > `FFlagTaskSchedulerLimitTargetFpsTo2402` : When False, disables the internal FPS limit of 2402, allowing full override via `DFIntTaskSchedulerTargetFps`.
 
-🖼️ Graphics & Rendering
-- DFFlagTextureQualityOverrideEnabled: Enables manual control over texture quality settings.
-- DFIntTextureQualityOverride: Sets the texture quality level. 3 typically corresponds to high quality.
-- DFIntCullFactorPixelThresholdShadowMapHighQuality / LowQuality: Maxes out the pixel threshold for shadow map culling, ensuring shadows are always rendered regardless of pixel density.
-- FIntDebugForceMSAASamples: Forces Multi-Sample Anti-Aliasing (MSAA) with 1 sample. This can reduce aliasing but may impact performance.
-- FIntRenderGrassDetailStrands: Disables grass strand rendering by setting it to 0, improving performance.
-- FIntRenderLocalLightFadeInMs: Sets light fade-in time to 0, making lighting transitions instant.
-- FIntRenderLocalLightUpdatesMax / Min: Limits local light updates to 1, reducing lighting computation overhead.
-- FIntRenderShadowIntensity: Sets shadow intensity to 0, effectively disabling shadows.
-- FIntRenderShadowmapBias: Adjusts shadow bias to 75, which can reduce shadow artifacts.
-- FFlagDisablePostFx: Disables post-processing effects like bloom and blur, improving clarity and performance.
-- FFlagDebugGraphicsPreferD3D11 / D3D11FL11: Forces the client to prefer DirectX 11 rendering, which is more stable and performant on modern systems.
-- FFlagDebugSkyGray: Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
-- FIntFontSizePadding: Sets padding around fonts, which may affect UI rendering.
-- FIntFullscreenTitleBarTriggerDelayMillis: Delays fullscreen title bar triggers. A high value like 3600000 effectively disables it.
+🖼️ Graphics & Rendering  
+> - `DFFlagTextureQualityOverrideEnabled`: Enables manual control over texture quality settings.  
+> - `DFIntTextureQualityOverride`: Sets the texture quality level. 3 typically corresponds to high quality.  
+> - `DFIntCullFactorPixelThresholdShadowMapHighQuality` / `DFIntCullFactorPixelThresholdShadowMapLowQuality`: Maxes out the pixel threshold for shadow map culling, ensuring shadows are always rendered regardless of pixel density.  
+> - `FIntDebugForceMSAASamples`: Forces Multi-Sample Anti-Aliasing (MSAA) with 1 sample. This can reduce aliasing but may impact performance.  
+> - `FIntRenderGrassDetailStrands`: Disables grass strand rendering by setting it to 0, improving performance.  
+> - `FIntRenderLocalLightFadeInMs`: Sets light fade-in time to 0, making lighting transitions instant.  
+> - `FIntRenderLocalLightUpdatesMax` / `FIntRenderLocalLightUpdatesMin`: Limits local light updates to 1, reducing lighting computation overhead.  
+> - `FIntRenderShadowIntensity`: Sets shadow intensity to 0, effectively disabling shadows.  
+> - `FIntRenderShadowmapBias`: Adjusts shadow bias to 75, which can reduce shadow artifacts.  
+> - `FFlagDisablePostFx`: Disables post-processing effects like bloom and blur, improving clarity and performance.  
+> - `FFlagDebugGraphicsPreferD3D11` / `FFlagDebugGraphicsPreferD3D11FL11`: Forces the client to prefer DirectX 11 rendering, which is more stable and performant on modern systems.  
+> - `FFlagDebugSkyGray`: Replaces the dynamic skybox with a flat gray sky, reducing GPU load.  
+> - `FIntFontSizePadding`: Sets padding around fonts, which may affect UI rendering.  
+> - `FIntFullscreenTitleBarTriggerDelayMillis`: Delays fullscreen title bar triggers. A high value like 3600000 effectively disables it.  
 
-🧪 Debug & Determinism
-- FFlagDebugDisplayFPS: When False, hides the FPS counter.
-- FFlagDebugForceFutureIsBrightPhase2: Forces the newer lighting system for consistency and testing.
-- FFlagDebugForceFSMCPULightCulling: Enables CPU-based light culling, which may improve performance in certain scenes.
-- FFlagNewLightAttenuation: Enables improved light attenuation calculations for more realistic lighting.
-- FIntDebugTextureManagerSkipMips: Controls mipmap skipping. 0 disables skipping, ensuring full texture detail.
-- FFlagDebugCheckRenderThreading / RenderDebugCheckThreading2: Enables threading checks for render operations, useful for debugging performance bottlenecks.
-- FFlagDebugRenderingSetDeterministic: Forces deterministic rendering behavior, useful for debugging and consistency.
-- FFlagHandleAltEnterFullscreenManually: When False, disables manual handling of Alt+Enter fullscreen toggling.
-- FFlagUserHideCharacterParticlesInFirstPerson: Hides character particle effects in first-person view, improving visibility and performance.
+🧪 Debug & Determinism  
+> - `FFlagDebugDisplayFPS`: When False, hides the FPS counter.  
+> - `FFlagDebugForceFutureIsBrightPhase2`: Forces the newer lighting system for consistency and testing.  
+> - `FFlagDebugForceFSMCPULightCulling`: Enables CPU-based light culling, which may improve performance in certain scenes.  
+> - `FFlagNewLightAttenuation`: Enables improved light attenuation calculations for more realistic lighting.  
+> - `FIntDebugTextureManagerSkipMips`: Controls mipmap skipping. 0 disables skipping, ensuring full texture detail.  
+> - `FFlagDebugCheckRenderThreading` / `FFlagRenderDebugCheckThreading2`: Enables threading checks for render operations, useful for debugging performance bottlenecks.  
+> - `FFlagDebugRenderingSetDeterministic`: Forces deterministic rendering behavior, useful for debugging and consistency.  
+> - `FFlagHandleAltEnterFullscreenManually`: When False, disables manual handling of Alt+Enter fullscreen toggling.  
+> - `FFlagUserHideCharacterParticlesInFirstPerson`: Hides character particle effects in first-person view, improving visibility and performance.  
 
-🧱 Terrain & Voxel
-- DFFlagDebugPauseVoxelizer: Pauses the voxelizer, reducing background processing load.
-- DFFlagDebugRenderForceTechnologyVoxel: Forces voxel-based rendering, which may simplify lighting and geometry calculations.
-- FIntTerrainArraySliceSize: Controls terrain slice size. 0 disables slicing, reducing terrain complexity.
-- DFIntDebugFRMQualityLevelOverride: Overrides the FRM (Fast Rendering Mode) quality level. 3 typically corresponds to high quality.
-- FIntFRMMaxGrassDistance / MinGrassDistance: Sets grass rendering distance to 0, disabling grass rendering entirely.
+🧱 Terrain & Voxel  
+> - `DFFlagDebugPauseVoxelizer`: Pauses the voxelizer, reducing background processing load.  
+> - `DFFlagDebugRenderForceTechnologyVoxel`: Forces voxel-based rendering, which may simplify lighting and geometry calculations.  
+> - `FIntTerrainArraySliceSize`: Controls terrain slice size. 0 disables slicing, reducing terrain complexity.  
+> - `DFIntDebugFRMQualityLevelOverride`: Overrides the FRM (Fast Rendering Mode) quality level. 3 typically corresponds to high quality.  
+> - `FIntFRMMaxGrassDistance` / `FIntFRMMinGrassDistance`: Sets grass rendering distance to 0, disabling grass rendering entirely.  
 
-📡 Telemetry & Analytics
-- FFlagDebugDisableTelemetryEphemeralCounter / Stat / EventIngest / Point / V2Counter / V2Event / V2Stat: Disables various telemetry systems, reducing background data collection and potential performance overhead.
+📡 Telemetry & Analytics  
+> - `FFlagDebugDisableTelemetryEphemeralCounter` / `FFlagDebugDisableTelemetryEphemeralStat` / `FFlagDebugDisableTelemetryEventIngest` / `FFlagDebugDisableTelemetryPoint` / `FFlagDebugDisableTelemetryV2Counter` / `FFlagDebugDisableTelemetryV2Event` / `FFlagDebugDisableTelemetryV2Stat`: Disables various telemetry systems, reducing background data collection and potential performance overhead.  
 
-🌐 Networking
-- FLogNetwork: Sets network logging level to 7, which is typically verbose for debugging.
-- DFIntConnectionMTUSize: Sets the maximum transmission unit size to 900, optimizing packet size for network performance.
-- FIntRakNetResendBufferArrayLength: Controls the buffer size for RakNet resends. 128 is a moderate value for stability.
-- FFlagOptimizeNetwork / Routing / Transport / ServerTickRate: Enables various network optimizations for routing, transport, and server update frequency.
-- DFIntServerPhysicsUpdateRate / ServerTickRate: Sets server update rates to 60Hz, ensuring smooth physics and game logic processing.
-- DFIntRakNetResendRttMultiple: Controls resend timing based on round-trip time. 1 is minimal delay.
-- DFIntRaknetBandwidthPingSendEveryXSeconds: Sends ping every second for tighter latency tracking.
-- DFIntOptimizePingThreshold: Sets ping optimization threshold to 50ms, improving responsiveness.
-- DFIntPlayerNetworkUpdateQueueSize / UpdateRate: Controls how often and how much player data is sent over the network.
-- DFIntNetworkPrediction / LatencyTolerance / MinimalNetworkPrediction: Fine-tunes prediction and latency handling for smoother movement and sync.
+🌐 Networking  
+> - `FLogNetwork`: Sets network logging level to 7, which is typically verbose for debugging.  
+> - `DFIntConnectionMTUSize`: Sets the maximum transmission unit size to 900, optimizing packet size for network performance.  
+> - `FIntRakNetResendBufferArrayLength`: Controls the buffer size for RakNet resends. 128 is a moderate value for stability.  
+> - `FFlagOptimizeNetwork` / `FFlagOptimizeNetworkRouting` / `FFlagOptimizeNetworkTransport` / `FFlagOptimizeServerTickRate`: Enables various network optimizations for routing, transport, and server update frequency.  
+> - `DFIntServerPhysicsUpdateRate` / `DFIntServerTickRate`: Sets server update rates to 60Hz, ensuring smooth physics and game logic processing.  
+> - `DFIntRakNetResendRttMultiple`: Controls resend timing based on round-trip time. 1 is minimal delay.  
+> - `DFIntRaknetBandwidthPingSendEveryXSeconds`: Sends ping every second for tighter latency tracking.  
+> - `DFIntOptimizePingThreshold`: Sets ping optimization threshold to 50ms, improving responsiveness.  
+> - `DFIntPlayerNetworkUpdateQueueSize` / `DFIntPlayerNetworkUpdateRate`: Controls how often and how much player data is sent over the network.  
+> - `DFIntNetworkPrediction` / `DFIntNetworkLatencyTolerance` / `DFIntMinimalNetworkPrediction`: Fine-tunes prediction and latency handling for smoother movement and sync.  
 
-🧱 Geometry & CSG
-- DFIntCSGLevelOfDetailSwitchingDistance / L12 / L23 / L34: Controls when level-of-detail (LOD) switches occur for Constructive Solid Geometry. Higher values delay LOD transitions, preserving visual fidelity.
+🧱 Geometry & CSG  
+> - `DFIntCSGLevelOfDetailSwitchingDistance` / `DFIntCSGLevelOfDetailSwitchingDistanceL12` / `DFIntCSGLevelOfDetailSwitchingDistanceL23` / `DFIntCSGLevelOfDetailSwitchingDistanceL34`: Controls when level-of-detail (LOD) switches occur for Constructive Solid Geometry. Higher values delay LOD transitions, preserving visual fidelity.  
 
-Sources:
-GitHub: Roblox Performance FFlags
-Roblox DevForum: Fast Flag Allowlist
-Bloxstrap FastFlags Guide
-Stoofis Fast Flags
-Dantezz025/Roblox-Fast-Flags
+Sources:  
+GitHub: Roblox Performance FFlags  
+Roblox DevForum: Fast Flag Allowlist  
+Bloxstrap FastFlags Guide  
+Stoofis Fast Flags  
+Dantezz025/Roblox-Fast-Flags  
+
 
