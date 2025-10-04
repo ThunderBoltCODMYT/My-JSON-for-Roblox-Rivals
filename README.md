@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> Fast Flags are internal switches used by Roblox Devs. and Engineers. They are to be used very carefully and only if you know what you are doing. Me myself as an learning roblox engineer wanted to share my FFlags with other people. I use these fast flags specifically for Roblox Rivals. If you do not know what you are doing I would strictly reccomend you to NOT USE these fast flags.
+> Fast Flags are internal switches used by Roblox Devs. and Engineers. They are to be used very carefully and only if you know what you are doing. Me myself as an learning roblox engineer wanted to share my FFlags with other people. I use these fast flags specifically for Roblox Rivals. If you do not know what you are doing I would strictly reccomend you to **NOT USE** these fast flags.
 
 > [!IMPORTANT]
 > **Fast Flags do not violate the roblox TOS unless they mess with Server logic or exploits**
