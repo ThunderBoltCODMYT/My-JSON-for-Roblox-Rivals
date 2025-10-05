@@ -21,28 +21,28 @@
 >> They’re not exposed in the regular settings UI, but they exist deep in the engine, often as FFlag, DFInt, FInt, or DFFlag keys.
 >
 > There are many different prefixes and all have their own meanings:
->>   | `Prefix`               | `Meaning`                                 |
->>   |------------------------|-------------------------------------------|
->>   | `FFlag`                | `Fast Flag`                               |
->>   | `FInt`                 | `Fast Integer`                            |
->>   | `FString`              | `Fast String`                             |
->>   | `FLog`                 | `Fast Log`                                |
->>   | `DFFlag`               | `Debug Fast Flag`                         |
->>   | `DFInt`                | `Debug Fast Integer`                      |
->>   | `DFString`             | `Debug Fast String`                       |
->>   | `DFFlag`               | `Dynamic Fast Flag`                       |
->>   | `SFFlag`               | `Studio Fast Flag`                        |
->>   | `SFInt`                | `Studio Fast Integer`                     |
->>   | `FFlagDebug`           | `Fast Flag for Debugging`                 |
->>   | `FFlagUser`            | `User-specific Fast Flag`                 |
->>   | `FFlagRender`          | `Rendering-specific Fast Flag`            |
->>   | `FFlagTaskScheduler`   | `Task Scheduler Fast Flag`                |
->>   | `FFlagGraphics`        | `Graphics-related Fast Flag`              |
->>   | `FFlagNetwork`         | `Network-related Fast Flag`               |
->>   | `FFlagPerf`            | `Performance-related Fast Flag`           |
->>   | `DFIntClient`          | `Debug Fast Integer for Client`           |
->>   | `DFIntServer`          | `Debug Fast Integer for Server`           |
->>   | `DFStringTelemetry`    | `Debug Fast String for Telemetry`         |  
+>>   | `Prefix`               | `DataType` | `Meaning`                          |
+>>   |------------------------|------------|------------------------------------|
+>>   | `FFlag`                | `Boolean`  | `Fast Flag`                        |
+>>   | `FInt`                 | `Int`      | `Fast Integer`                     |
+>>   | `FString`              | `String`   | `Fast String`                      |
+>>   | `FLog`                 | `Boolean`  | `Fast Log`                         |
+>>   | `DFFlag`               | `Boolean`  | `Debug Fast Flag`                  |
+>>   | `DFInt`                | `Int`      | `Debug Fast Integer`               |
+>>   | `DFString`             | `String`   | `Debug Fast String`                |
+>>   | `DFFlag`               | `String`   | `Dynamic Fast Flag`                |
+>>   | `SFFlag`               | `Boolean`  | `Studio Fast Flag`                 |
+>>   | `SFInt`                | `Int`      | `Studio Fast Integer`              |
+>>   | `FFlagDebug`           | `Boolean`  | `Fast Flag for Debugging`          |
+>>   | `FFlagUser`            | `Boolean`  | `User-specific Fast Flag`          |
+>>   | `FFlagRender`          | `Boolean`  | `Rendering-specific Fast Flag`     |
+>>   | `FFlagTaskScheduler`   | `Boolean`  | `Task Scheduler Fast Flag`         |
+>>   | `FFlagGraphics`        | `Boolean`  | `Graphics-related Fast Flag`       |
+>>   | `FFlagNetwork`         | `Boolean`  | `Network-related Fast Flag`        |
+>>   | `FFlagPerf`            | `Boolean`  | `Performance-related Fast Flag`    |
+>>   | `DFIntClient`          | `Int`      | `Debug Fast Integer for Client`    |
+>>   | `DFIntServer`          | `Int`      | `Debug Fast Integer for Server`    |
+>>   | `DFStringTelemetry`    | `String`   | `Debug Fast String for Telemetry`  |  
 >
 > What Are Custom Mods?  
 >> Custom mods are user-defined configurations that override default FastFlag values. These mods are:
