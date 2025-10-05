@@ -2,13 +2,13 @@
 > Fast Flags are internal switches used by Roblox Devs. and Engineers. They are to be used very carefully and only if you know what you are doing. Me myself as an learning roblox engineer wanted to share my FFlags with other people. I use these fast flags specifically for Roblox Rivals. If you do not know what you are doing I would strictly reccomend you to **NOT USE** these fast flags.
 
 > [!IMPORTANT]
-> **Fast Flags do not violate the roblox TOS unless they mess with Server logic or exploits**
+> # Fast Flags do not violate the roblox TOS unless they mess with Server logic or exploits
 
 > [!WARNING]
-> **certain Fast Flags are a bannable offense in some games.**
+> # certain Fast Flags are a bannable offense in some games.
 
 > [!NOTE]
-> **Fast Flags are only used to make client side changes using them for anything like messing with server logic or exploits will get you banned.**
+> # Fast Flags are only used to make client side changes using them for anything like messing with server logic or exploits will get you banned.
 
 > [!TIP]
 > What exactly are Fast Flags and custom mods and what do they do? How do they help us?
