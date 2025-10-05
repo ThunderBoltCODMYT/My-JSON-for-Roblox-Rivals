@@ -7,6 +7,8 @@ This repository is intended for Roblox engineers and advanced power users who un
 > [!IMPORTANT]
 > ### Fast Flags do not violate the roblox TOS unless they mess with Server logic or exploits
 
+> ### This repository is for educational and testing purposes only and is not endorsed by Roblox Corporation. Use at your own risk.
+
 > [!WARNING]
 > ### certain Fast Flags are a bannable offense in some games.
 
