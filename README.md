@@ -391,12 +391,14 @@ Serves as a Task Scheduler Internal Limit Override. Setting it to False disables
 `DFIntCullFactorPixelThresholdShadowMapHighQuality` Sets the High-Quality Shadow Map Culling Threshold to its maximum value, effectively preventing the culling of high-quality shadows based on screen-space pixel density and `DFIntCullFactorPixelThresholdShadowMapLowQuality` Sets the Low-Quality Shadow Map Culling Threshold to its maximum value, ensuring low-quality shadows are always rendered.
 
 ```json
-"FIntDebugForceMSAASamples": "1"
+{
+  "FIntDebugForceMSAASamples": "1"
+}
 ```
 
 Explicitly sets the Forced Multi-Sample Anti-Aliasing (MSAA) Sample Count to 1, minimizing multi-sampling while potentially reducing certain aliasing forms.
 
-```
+```json
 {
   "FIntRenderGrassDetailStrands" : "0"
 }
