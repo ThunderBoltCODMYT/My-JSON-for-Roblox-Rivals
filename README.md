@@ -160,71 +160,72 @@ Before you see the Fast Flags important points:
 ## Actual JSON Code:
 ```json
 {
-    "DFIntTaskSchedulerTargetFps": "5588562",
-    "FIntRuntimeMaxNumOfThreads": "2400",
-    "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
-    "DFFlagTextureQualityOverrideEnabled": "True",
-    "DFIntCullFactorPixelThresholdShadowMapHighQuality": "2147483647",
-    "DFIntCullFactorPixelThresholdShadowMapLowQuality": "2147483647",
-    "DFIntTextureQualityOverride": "3",
-    "FIntDebugForceMSAASamples": "1",
-    "FIntRenderGrassDetailStrands": "0",
-    "FIntRenderLocalLightFadeInMs": "0",
-    "FIntRenderLocalLightUpdatesMax": "1",
-    "FIntRenderLocalLightUpdatesMin": "1",
-    "FIntRenderShadowIntensity": "0",
-    "FIntRenderShadowmapBias": "75",
-    "FLogNetwork": "7",
-    "FFlagDebugDisplayFPS": "False",
-    "FFlagDebugGraphicsPreferD3D11": "True",
-    "FFlagDebugGraphicsPreferD3D11FL11": "True",
-    "FFlagDisablePostFx": "True",
-    "FFlagHandleAltEnterFullscreenManually": "False",
-    "FFlagUserHideCharacterParticlesInFirstPerson": "True",
-    "DFFlagDebugPauseVoxelizer": "True",
-    "DFFlagDebugRenderForceTechnologyVoxel": "True",
-    "FIntTerrainArraySliceSize": "0",
-    "DFIntDebugFRMQualityLevelOverride": "3",
-    "FIntFRMMaxGrassDistance": "0",
-    "FIntFRMMinGrassDistance": "0",
-    "FFlagDebugForceFSMCPULightCulling": "True",
-    "FFlagNewLightAttenuation": "True",
-    "FIntDebugTextureManagerSkipMips": "0",
-    "FFlagDebugCheckRenderThreading": "True",
-    "FFlagDebugForceFutureIsBrightPhase2": "True",
-    "FFlagDebugRenderingSetDeterministic": "True",
-    "FFlagRenderDebugCheckThreading2": "True",
-    "FFlagDebugSkyGray": "True",
-    "FIntFontSizePadding": "4",
-    "FIntFullscreenTitleBarTriggerDelayMillis": "3600000",
-    "FFlagDebugDisableTelemetryEphemeralCounter": "True",
-    "FFlagDebugDisableTelemetryEphemeralStat": "True",
-    "FFlagDebugDisableTelemetryEventIngest": "True",
-    "FFlagDebugDisableTelemetryPoint": "True",
-    "FFlagDebugDisableTelemetryV2Counter": "True",
-    "FFlagDebugDisableTelemetryV2Event": "True",
-    "FFlagDebugDisableTelemetryV2Stat": "True",
-    "DFIntConnectionMTUSize": 900,
-    "FIntRakNetResendBufferArrayLength": "128",
-    "FFlagOptimizeNetwork": "True",
-    "FFlagOptimizeNetworkRouting": "True",
-    "FFlagOptimizeNetworkTransport": "True",
-    "FFlagOptimizeServerTickRate": "True",
-    "DFIntServerPhysicsUpdateRate": "60",
-    "DFIntServerTickRate": "60",
-    "DFIntRakNetResendRttMultiple": "1",
-    "DFIntRaknetBandwidthPingSendEveryXSeconds": "1",
-    "DFIntOptimizePingThreshold": "50",
-    "DFIntPlayerNetworkUpdateQueueSize": "20",
-    "DFIntPlayerNetworkUpdateRate": "60",
-    "DFIntNetworkPrediction": "120",
-    "DFIntNetworkLatencyTolerance": "1",
-    "DFIntMinimalNetworkPrediction": "0.1",
-    "DFIntCSGLevelOfDetailSwitchingDistance": 250,
-    "DFIntCSGLevelOfDetailSwitchingDistanceL12": 500,
-    "DFIntCSGLevelOfDetailSwitchingDistanceL23": 750,
-    "DFIntCSGLevelOfDetailSwitchingDistanceL34": 1000
+  "DFIntTaskSchedulerTargetFps": "180",
+  "FIntRuntimeMaxNumOfThreads": "32",
+  "FFlagTaskSchedulerLimitTargetFpsTo2402": "False",
+  "FFlagDisablePostFx": "True",
+  "FIntRenderShadowIntensity": "0",
+  "FIntRenderShadowmapBias": "75",
+  "FIntRenderLocalLightUpdatesMax": "1",
+  "FIntRenderLocalLightUpdatesMin": "1",
+  "FIntRenderLocalLightFadeInMs": "0",
+  "FIntRenderGrassDetailStrands": "0",
+  "DFIntCullFactorPixelThresholdShadowMapHighQuality": "2147483647",
+  "DFIntCullFactorPixelThresholdShadowMapLowQuality": "2147483647",
+  "DFIntTextureQualityOverride": "3",
+  "DFFlagTextureQualityOverrideEnabled": "True",
+  "FIntDebugForceMSAASamples": "1",
+  "FFlagDebugGraphicsPreferD3D11": "True",
+  "FFlagDebugGraphicsPreferD3D11FL10": "True",
+  "FFlagDebugForceFutureIsBrightPhase2": "True",
+  "FFlagDebugForceFSMCPULightCulling": "True",
+  "FFlagNewLightAttenuation": "True",
+  "FIntDebugTextureManagerSkipMips": "0",
+  "FIntFontSizePadding": "4",
+  "FIntFullscreenTitleBarTriggerDelayMillis": "3600000",
+  "DFFlagDebugPauseVoxelizer": "True",
+  "DFFlagDebugRenderForceTechnologyVoxel": "True",
+  "FIntTerrainArraySliceSize": "0",
+  "DFIntDebugFRMQualityLevelOverride": "3",
+  "FIntFRMMaxGrassDistance": "0",
+  "FIntFRMMinGrassDistance": "0",
+  "FFlagDebugRenderingSetDeterministic": "True",
+  "FFlagRenderDebugCheckThreading2": "True",
+  "FFlagDebugCheckRenderThreading": "True",
+  "FFlagDebugDisableTelemetryEphemeralCounter": "True",
+  "FFlagDebugDisableTelemetryEphemeralStat": "True",
+  "FFlagDebugDisableTelemetryEventIngest": "True",
+  "FFlagDebugDisableTelemetryPoint": "True",
+  "FFlagDebugDisableTelemetryV2Counter": "True",
+  "FFlagDebugDisableTelemetryV2Event": "True",
+  "FFlagDebugDisableTelemetryV2Stat": "True",
+  "FFlagDebugSkyGray": "True",
+  "FFlagDebugDisplayFPS": "False",
+  "FFlagUserHideCharacterParticlesInFirstPerson": "True",
+  "FFlagHandleAltEnterFullscreenManually": "False",
+  "FLogNetwork": "7",
+  "DFIntConnectionMTUSize": 1472,
+  "FIntRakNetResendBufferArrayLength": "128",
+  "FFlagOptimizeNetwork": "True",
+  "FFlagOptimizeNetworkRouting": "True",
+  "FFlagOptimizeNetworkTransport": "True",
+  "FFlagOptimizeServerTickRate": "True",
+  "DFIntServerPhysicsUpdateRate": "60",
+  "DFIntServerTickRate": "60",
+  "DFIntRakNetResendRttMultiple": "1",
+  "DFIntRaknetBandwidthPingSendEveryXSeconds": "1",
+  "DFIntOptimizePingThreshold": "50",
+  "DFIntPlayerNetworkUpdateQueueSize": "20",
+  "DFIntPlayerNetworkUpdateRate": "60",
+  "DFIntNetworkPrediction": "120",
+  "DFIntNetworkLatencyTolerance": "1",
+  "DFIntMinimalNetworkPrediction": "0.1",
+  "DFIntCSGLevelOfDetailSwitchingDistance": 250,
+  "DFIntCSGLevelOfDetailSwitchingDistanceL12": 500,
+  "DFIntCSGLevelOfDetailSwitchingDistanceL23": 750,
+  "DFIntCSGLevelOfDetailSwitchingDistanceL34": 1000
 }
+
 ```
 ---
 
@@ -339,8 +340,8 @@ Before you see the Fast Flags important points:
 <h1 align="center">Meaning and effect of every Fast Flag</h1>
 
 > ## 🎮 Task Scheduling and Threading
-> - `DFIntTaskSchedulerFPS` : Sets the target FPS for the task scheduler. A high value like 5588562 effectively removes the FPS cap, allowing the client to run at maximum possible frame rate.  
-> - `FIntRuntimeMaxNumOfThreads` : Defines the maximum number of threads the runtime can use. Setting this to 2400 enables aggressive multithreading, improving performance on multi-core systems.  
+> - `DFIntTaskSchedulerFPS` : Sets the target FPS for the task scheduler to 180 but it is recommended that you cap your fps to your monitors refresh rate.  
+> - `FIntRuntimeMaxNumOfThreads` : Defines the maximum number of threads the runtime can use. Setting this to 32 enables aggressive multithreading, improving performance on multi-core systems.  
 > - `FFlagTaskSchedulerLimitTargetFpsTo2402` : When False, disables the internal FPS limit of 2402, allowing full override via `DFIntTaskSchedulerTargetFps`.
 
 > ## 🖼️ Graphics & Rendering  
@@ -354,7 +355,7 @@ Before you see the Fast Flags important points:
 > - `FIntRenderShadowIntensity`: Sets shadow intensity to 0, effectively disabling shadows.  
 > - `FIntRenderShadowmapBias`: Adjusts shadow bias to 75, which can reduce shadow artifacts.  
 > - `FFlagDisablePostFx`: Disables post-processing effects like bloom and blur, improving clarity and performance.  
-> - `FFlagDebugGraphicsPreferD3D11` / `FFlagDebugGraphicsPreferD3D11FL11`: Forces the client to prefer DirectX 11 rendering, which is more stable and performant on modern systems.  
+> - `FFlagDebugGraphicsPreferD3D11` / `FFlagDebugGraphicsPreferD3D11FL10`: Forces the client to prefer DirectX 11 rendering, which is more stable and performant on modern systems.  
 > - `FFlagDebugSkyGray`: Replaces the dynamic skybox with a flat gray sky, reducing GPU load.  
 > - `FIntFontSizePadding`: Sets padding around fonts, which may affect UI rendering.  
 > - `FIntFullscreenTitleBarTriggerDelayMillis`: Delays fullscreen title bar triggers. A high value like 3600000 effectively disables it.  
@@ -382,7 +383,7 @@ Before you see the Fast Flags important points:
 
 > ## 🌐 Networking  
 > - `FLogNetwork`: Sets network logging level to 7, which is typically verbose for debugging.  
-> - `DFIntConnectionMTUSize`: Sets the maximum transmission unit size to 900, optimizing packet size for network performance.  
+> - `DFIntConnectionMTUSize`: Sets the maximum transmission unit size to 1472, optimizing packet size for network performance.  
 > - `FIntRakNetResendBufferArrayLength`: Controls the buffer size for RakNet resends. 128 is a moderate value for stability.  
 > - `FFlagOptimizeNetwork` / `FFlagOptimizeNetworkRouting` / `FFlagOptimizeNetworkTransport` / `FFlagOptimizeServerTickRate`: Enables various network optimizations for routing, transport, and server update frequency.  
 > - `DFIntServerPhysicsUpdateRate` / `DFIntServerTickRate`: Sets server update rates to 60Hz, ensuring smooth physics and game logic processing.  
@@ -402,4 +403,5 @@ Bloxstrap FastFlags Guide
 Stoofis Fast Flags  
 Dantezz025/Roblox-Fast-Flags  
 
-Last Update Timestamp : October 5th, 2025
+Update Timestamps : October 5th, 2025
+12 October 2025
