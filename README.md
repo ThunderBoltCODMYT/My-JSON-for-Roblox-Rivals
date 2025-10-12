@@ -142,7 +142,7 @@ Roblox Installation Directory
 > As of the change made by roblox on September 29, 2025 with that a broader purge was taken to disable most of the engine-level rendering flags if you have been wondering where the fast flags editor option went in bloxstrap this is the reason roblox did this to prevent unauthorised    client-side Manipulation From Roblox's Perspective some fastflags like FIntRenderShadowIntensity were disabled because:
 >> - It bypassed their engines intended lighting pipeline.
 >> - and could be used to gain unfair performance and visual advantages.
-> And because of this when the ui update came in bloxstrap v2.9.0 they removed the fast flag editor and now the latest version is v2.10.0 and they have completely removed the `FFlags` editor option from the ui as a part of this purge Right now it is reccommended that you use any other bootstrapper than bloxstrap but the whitelist however is enforced on all so the fflags not in the whitelist will not work not even if you manually edit ClientSettings.json .
+> And because of this when the ui update came in bloxstrap v2.9.1 they removed the fast flag editor and now the latest version is v2.10.0 and they have completely removed the `FFlags` editor option from the ui as a part of this purge Right now it is reccommended that you use any other bootstrapper than bloxstrap but the whitelist however is enforced on all so the fflags not in the whitelist will not work not even if you manually edit ClientSettings.json .
 
 > [!CAUTION]
 > USE THEM AT YOUR OWN RISK
@@ -345,18 +345,23 @@ Before you see the Fast Flags important points:
   "DFIntTaskSchedulerFPS" : "180"
 }
 ```
+
 Sets the Target Task Scheduler Frequency to 180 frames per second (FPS). Note: Synchronization with the display's native refresh rate is recommended for optimal frame pacing.
+
 ```json
 {
   "FIntRuntimeMaxNumOfThreads" : "32"
 }
 ```
+
 Defines the Runtime Maximum Thread Pool Size as 32. This aggressively leverages multi-core architectures to maximize parallel processing performance. 
+
 ```json
 {
   "FFlagTaskSchedulerLimitTargetFpsTo2402" : "False"
 {
 ```
+
 Serves as a Task Scheduler Internal Limit Override. Setting it to False disables a hardcoded FPS ceiling of 2402, allowing the `DFIntTaskSchedulerTargetFps` to fully control the execution frequency.
 
 ## 🖼️ Graphics & Rendering  
@@ -365,36 +370,48 @@ Serves as a Task Scheduler Internal Limit Override. Setting it to False disables
   "DFFlagTextureQualityOverrideEnabled": "True"
 }
 ```
+
  Enables Manual Texture Quality Control, allowing explicit specification of the texture detail level.
+ 
 ```json
 {
   "DFIntTextureQualityOverride" : "3"
 }
 ```
+
  Sets the Forced Texture Quality Level to 3, which corresponds to the High fidelity preset.
+ 
 ```json
 {
   "DFIntCullFactorPixelThresholdShadowMapHighQuality": "2147483647",
   "DFIntCullFactorPixelThresholdShadowMapLowQuality": "2147483647"
 }
 ```
+
 `DFIntCullFactorPixelThresholdShadowMapHighQuality` Sets the High-Quality Shadow Map Culling Threshold to its maximum value, effectively preventing the culling of high-quality shadows based on screen-space pixel density and `DFIntCullFactorPixelThresholdShadowMapLowQuality` Sets the Low-Quality Shadow Map Culling Threshold to its maximum value, ensuring low-quality shadows are always rendered.
+
 ```json
 "FIntDebugForceMSAASamples": "1"
 ```
+
 Explicitly sets the Forced Multi-Sample Anti-Aliasing (MSAA) Sample Count to 1, minimizing multi-sampling while potentially reducing certain aliasing forms.
+
 ```
 {
   "FIntRenderGrassDetailStrands" : "0"
 }
 ```
-Disables the rendering of individual Grass Detail Strands to yield a measurable gain in rendering performance.  
+
+Disables the rendering of individual Grass Detail Strands to yield a measurable gain in rendering performance. 
+
 ```json
 {
   "FIntRenderLocalLightFadeInMs": "0"
 }
 ```
+
  Sets the Local Light Fade-In Duration to 0 milliseconds, ensuring instantaneous light transitions.
+ 
 ```json
 {
   "FIntRenderLocalLightUpdatesMax": "1",
@@ -402,27 +419,34 @@ Disables the rendering of individual Grass Detail Strands to yield a measurable 
 }
 
 ```
+
 Limits the Maximum Concurrent Local Light Updates per frame to 1, reducing the computational load on the lighting subsystem. 
+
 ```json
 {
   "FIntRenderShadowIntensity": "0"
 }
 
 ```
+
 Sets the Minimum Concurrent Local Light Updates per frame to 1, ensuring a consistent (though minimal) update frequency.
+
 ```json
 {
   "FIntRenderShadowmapBias": "75"
 }
 
 ```
+
 Adjusts the Shadow Map Bias Value to 75. This technique is used to mitigate shadow acne artifacts.
+
 ```json
 {
   "FFlagDisablePostFx": "True"
 }
 
 ```
+
  Serves as a Post-Processing Pipeline Bypass, disabling effects like Bloom and Depth of Field to improve visual clarity and maximize rendering throughput.
   
 ```json
@@ -430,27 +454,34 @@ Adjusts the Shadow Map Bias Value to 75. This technique is used to mitigate shad
   "FFlagDebugGraphicsPreferD3D11FL10": "True"
 }
 ```
- Forces the client to prefer DirectX 11 rendering, which is more stable and performant on modern systems.  
+
+ Forces the client to prefer DirectX 11 rendering, which is more stable and performant on modern systems. 
+ 
 ```json
 {
   "FFlagDebugSkyGray": "True"
 }
 
 ```
-Replaces the dynamic skybox with a flat gray sky, reducing GPU load.  
+
+Replaces the dynamic skybox with a flat gray sky, reducing GPU load. 
+
 ```json
 {
   "FIntFontSizePadding": "4"
 }
 
 ```
+
  Sets padding around fonts, which may affect UI rendering.  
+ 
 ```json
 {
   "FIntFullscreenTitleBarTriggerDelayMillis": "3600000"
 }
 
 ```
+
  Delays fullscreen title bar triggers. A high value like 3600000 effectively disables it.  
 
 ## 🧪 Debug & Determinism
@@ -461,62 +492,79 @@ Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
 }
 
 ```
- When False, hides the FPS counter.  
+
+ When False, hides the FPS counter.
+ 
 ```json
 {
   "FFlagDebugForceFutureIsBrightPhase2": "True"
 }
 
 ```
+
  Forces the newer lighting system for consistency and testing.  
+ 
 ```json
 {
   "FFlagDebugForceFSMCPULightCulling": "True"
 }
 
 ```
+
  Enables CPU-based light culling, which may improve performance in certain scenes.  
+ 
 ```json
 {
   "FFlagNewLightAttenuation": "True"
 }
 
 ```
+
  Enables improved light attenuation calculations for more realistic lighting.  
+ 
 ```json
 {
   "FIntDebugTextureManagerSkipMips": "0"
 }
 
 ```
- Controls mipmap skipping. 0 disables skipping, ensuring full texture detail.  
+
+ Controls mipmap skipping. 0 disables skipping, ensuring full texture detail. 
+ 
 ```json
 {
   "FFlagDebugCheckRenderThreading": "True"
 }
 
 ```
+
  Enables threading checks for render operations, useful for debugging performance bottlenecks.  
+ 
 ```json
 {
   "FFlagDebugRenderingSetDeterministic": "True"
 }
 
 ```
+
  Forces deterministic rendering behavior, useful for debugging and consistency.  
+ 
 ```json
 {
   "FFlagHandleAltEnterFullscreenManually": "False"
 }
 
 ```
+
  When False, disables manual handling of Alt+Enter fullscreen toggling.  
+ 
 ```json
 {
   "FFlagUserHideCharacterParticlesInFirstPerson": "True"
 }
 
 ```
+
 Hides character particle effects in first-person view, improving visibility and performance. 
  
 ## 🧱 Terrain & Voxel  
@@ -527,37 +575,47 @@ Hides character particle effects in first-person view, improving visibility and 
 }
 
 ```
+
  Pauses the voxelizer, reducing background processing load.  
+ 
 ```json
 {
   "DFFlagDebugRenderForceTechnologyVoxel": "True"
 }
 
 ```
+
  Forces voxel-based rendering, which may simplify lighting and geometry calculations.  
+ 
 ```json
 {
   "FIntTerrainArraySliceSize": "0"
 }
 
 ```
+
  Controls terrain slice size. 0 disables slicing, reducing terrain complexity.  
+ 
 ```json
 {
   "DFIntDebugFRMQualityLevelOverride": "3"
 }
 
 ```
+
  Overrides the FRM (Fast Rendering Mode) quality level. 3 typically corresponds to high quality.  
+ 
 ```json
 {
   "FIntFRMMax/MinGrassDistance": "0"
 }
 
 ```
+
  Sets grass rendering distance to 0, disabling grass rendering entirely.  
 
 ## 📡 Telemetry & Analytics  
+
 ```json
 {
   "FFlagDebugDisableTelemetryEphemeralCounter": "True",
@@ -570,30 +628,38 @@ Hides character particle effects in first-person view, improving visibility and 
 }
 
 ```
+
  Disables various telemetry systems, reducing background data collection and potential performance overhead.  
 
 ## 🌐 Networking  
+
 ```json
 {
   "FLogNetwork": "7"
 }
 
 ```
- Sets network logging level to 7, which is typically verbose for debugging.  
+
+ Sets network logging level to 7, which is typically verbose for debugging. 
+ 
 ```json
 {
   "DFIntConnectionMTUSize": 1472
 }
 
 ```
- Sets the maximum transmission unit size to 1472, optimizing packet size for network performance and reduce packet fragmentation.  
+
+ Sets the maximum transmission unit size to 1472, optimizing packet size for network performance and reduce packet fragmentation.
+ 
 ```json
 {
   "FIntRakNetResendBufferArrayLength": "128"
 }
 
 ```
- Controls the buffer size for RakNet resends. 128 is a moderate value for stability.  
+
+ Controls the buffer size for RakNet resends. 128 is a moderate value for stability. 
+ 
 ```json
 {
   "FFlagOptimizeNetworkRouting": "True",
@@ -606,35 +672,45 @@ Hides character particle effects in first-person view, improving visibility and 
   "DFIntMinimalNetworkPrediction": "0.1"
 }
 ```
- Enables various network optimizations for routing, transport, and server update frequency.  
+
+ Enables various network optimizations for routing, transport, and server update frequency.
+ 
 ```json
 {
   "DFIntServerPhysicsUpdateRate": "60",
   "DFIntServerTickRate": "60"
 }
 ```
- Sets server update rates to 60Hz, ensuring smooth physics and game logic processing.  
+
+ Sets server update rates to 60Hz, ensuring smooth physics and game logic processing.
+ 
 ```json
 {
   "DFIntRakNetResendRttMultiple": "1"
 }
 
 ```
- Controls resend timing based on round-trip time. 1 is minimal delay.  
+
+ Controls resend timing based on round-trip time. 1 is minimal delay. 
+ 
 ```json
 {
   "DFIntRaknetBandwidthPingSendEveryXSeconds": "1"
 }
 
 ```
- Sends ping every second for tighter latency tracking.  
+
+ Sends ping every second for tighter latency tracking. 
+ 
 ```json
 {
   "DFIntOptimizePingThreshold": "50"
 }
 
 ```
- Sets ping optimization threshold to 50ms, improving responsiveness.  
+
+ Sets ping optimization threshold to 50ms, improving responsiveness.
+ 
 ```json
 {
   "DFIntPlayerNetworkUpdateQueueSize": "20",
@@ -642,13 +718,16 @@ Hides character particle effects in first-person view, improving visibility and 
 }
 
 ```
- Controls how often and how much player data is sent over the network.  
+ 
+ Controls how often and how much player data is sent over the network. 
+ 
 ```json
 {
   "DFIntNetworkLatencyTolerance": "1",
   "DFIntMinimalNetworkPrediction": "0.1"
 }
 ```
+
  Fine-tunes prediction and latency handling for smoother movement and sync.  
 
 ## 🧱 Geometry & CSG  
