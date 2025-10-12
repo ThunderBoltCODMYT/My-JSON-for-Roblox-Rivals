@@ -364,7 +364,8 @@ Defines the Runtime Maximum Thread Pool Size as 32. This aggressively leverages 
 
 Serves as a Task Scheduler Internal Limit Override. Setting it to False disables a hardcoded FPS ceiling of 2402, allowing the `DFIntTaskSchedulerTargetFps` to fully control the execution frequency.
 
-## 🖼️ Graphics & Rendering  
+## 🖼️ Graphics & Rendering
+
 ```json
 {
   "DFFlagTextureQualityOverrideEnabled": "True"
