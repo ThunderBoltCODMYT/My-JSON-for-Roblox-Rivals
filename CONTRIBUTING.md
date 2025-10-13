@@ -9,4 +9,4 @@ Thank you for your interest in contributing! There are several ways you can help
   Please include as much detail as possible so we can understand and address your feedback.
 
 - **Start a Discussion:**  
-  For broader questions, ideas, or community chat, use the [GitHub Discussions](https://github.com/ThunderBoltCODMYT/My-JSON-for-Roblox-Rivals/discussions) (if enabled).
+  For broader questions, ideas, or community chat, use the [GitHub Discussions](https://github.com/ThunderBoltCODMYT/My-JSON-for-Roblox-Rivals/discussions).
