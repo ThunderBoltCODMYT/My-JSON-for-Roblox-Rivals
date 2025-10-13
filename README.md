@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> Fast Flags are internal switches used by Roblox Devs. and Engineers. They are to be used very carefully and only if you know what you are doing. Me myself as an learning roblox engineer wanted to share my FFlags with other people. I use these fast flags specifically for Roblox Rivals. If you do not know what you are doing I would strictly reccomend you to **NOT USE** these fast flags.
+> Fast Flags are internal switches used by Roblox Devs. and Engineers. They are to be used very carefully and only if you know what you are doing. Me myself as an learning roblox engineer wanted to share my FFlags with the community of Roblox. I use these fast flags specifically for Roblox Rivals. If you do not know what you are doing I would strictly reccomend you to **NOT USE** these fast flags.
 
 > [!IMPORTANT]
 > ### Fast Flags do not violate the roblox TOS unless they mess with Server logic or exploits
@@ -372,7 +372,7 @@ Serves as a Task Scheduler Internal Limit Override. Setting it to False disables
 }
 ```
 
- Enables Manual Texture Quality Control, allowing explicit specification of the texture detail level.
+Enables Manual Texture Quality Control, allowing explicit specification of the texture detail level.
  
 ```json
 {
@@ -380,7 +380,7 @@ Serves as a Task Scheduler Internal Limit Override. Setting it to False disables
 }
 ```
 
- Sets the Forced Texture Quality Level to 3, which corresponds to the High fidelity preset.
+Sets the Forced Texture Quality Level to 3, which corresponds to the High fidelity preset.
  
 ```json
 {
@@ -413,7 +413,7 @@ Disables the rendering of individual Grass Detail Strands to yield a measurable 
 }
 ```
 
- Sets the Local Light Fade-In Duration to 0 milliseconds, ensuring instantaneous light transitions.
+Sets the Local Light Fade-In Duration to 0 milliseconds, ensuring instantaneous light transitions.
  
 ```json
 {
@@ -450,7 +450,7 @@ Adjusts the Shadow Map Bias Value to 75. This technique is used to mitigate shad
 
 ```
 
- Serves as a Post-Processing Pipeline Bypass, disabling effects like Bloom and Depth of Field to improve visual clarity and maximize rendering throughput.
+Serves as a Post-Processing Pipeline Bypass, disabling effects like Bloom and Depth of Field to improve visual clarity and maximize rendering throughput.
   
 ```json
 {
@@ -458,7 +458,7 @@ Adjusts the Shadow Map Bias Value to 75. This technique is used to mitigate shad
 }
 ```
 
- Forces the client to prefer DirectX 11 rendering, which is more stable and performant on modern systems. 
+Forces the client to prefer DirectX 11 rendering, which is more stable and performant on modern systems. 
  
 ```json
 {
@@ -476,7 +476,7 @@ Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
 
 ```
 
- Sets padding around fonts, which may affect UI rendering.  
+Sets padding around fonts, which may affect UI rendering.  
  
 ```json
 {
@@ -485,7 +485,7 @@ Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
 
 ```
 
- Delays fullscreen title bar triggers. A high value like 3600000 effectively disables it.  
+Delays fullscreen title bar triggers. A high value like 3600000 effectively disables it.  
 
 ## 🧪 Debug & Determinism
 
@@ -496,7 +496,7 @@ Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
 
 ```
 
- When False, hides the FPS counter.
+When False, hides the FPS counter.
  
 ```json
 {
@@ -505,7 +505,7 @@ Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
 
 ```
 
- Forces the newer lighting system for consistency and testing.  
+Forces the newer lighting system for consistency and testing.  
  
 ```json
 {
@@ -514,7 +514,7 @@ Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
 
 ```
 
- Enables CPU-based light culling, which may improve performance in certain scenes.  
+Enables CPU-based light culling, which may improve performance in certain scenes.  
  
 ```json
 {
@@ -523,7 +523,7 @@ Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
 
 ```
 
- Enables improved light attenuation calculations for more realistic lighting.  
+Enables improved light attenuation calculations for more realistic lighting.  
  
 ```json
 {
@@ -532,7 +532,7 @@ Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
 
 ```
 
- Controls mipmap skipping. 0 disables skipping, ensuring full texture detail. 
+Controls mipmap skipping. 0 disables skipping, ensuring full texture detail. 
  
 ```json
 {
@@ -541,7 +541,7 @@ Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
 
 ```
 
- Enables threading checks for render operations, useful for debugging performance bottlenecks.  
+Enables threading checks for render operations, useful for debugging performance bottlenecks.  
  
 ```json
 {
@@ -550,7 +550,7 @@ Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
 
 ```
 
- Forces deterministic rendering behavior, useful for debugging and consistency.  
+Forces deterministic rendering behavior, useful for debugging and consistency.  
  
 ```json
 {
@@ -559,7 +559,7 @@ Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
 
 ```
 
- When False, disables manual handling of Alt+Enter fullscreen toggling.  
+When False, disables manual handling of Alt+Enter fullscreen toggling.  
  
 ```json
 {
@@ -579,7 +579,7 @@ Hides character particle effects in first-person view, improving visibility and 
 
 ```
 
- Pauses the voxelizer, reducing background processing load.  
+Pauses the voxelizer, reducing background processing load.  
  
 ```json
 {
@@ -588,7 +588,7 @@ Hides character particle effects in first-person view, improving visibility and 
 
 ```
 
- Forces voxel-based rendering, which may simplify lighting and geometry calculations.  
+Forces voxel-based rendering, which may simplify lighting and geometry calculations.  
  
 ```json
 {
@@ -597,7 +597,7 @@ Hides character particle effects in first-person view, improving visibility and 
 
 ```
 
- Controls terrain slice size. 0 disables slicing, reducing terrain complexity.  
+Controls terrain slice size. 0 disables slicing, reducing terrain complexity.  
  
 ```json
 {
@@ -606,7 +606,7 @@ Hides character particle effects in first-person view, improving visibility and 
 
 ```
 
- Overrides the FRM (Fast Rendering Mode) quality level. 3 typically corresponds to high quality.  
+Overrides the FRM (Fast Rendering Mode) quality level. 3 typically corresponds to high quality.  
  
 ```json
 {
@@ -615,7 +615,7 @@ Hides character particle effects in first-person view, improving visibility and 
 
 ```
 
- Sets grass rendering distance to 0, disabling grass rendering entirely.  
+Sets grass rendering distance to 0, disabling grass rendering entirely.  
 
 ## 📡 Telemetry & Analytics  
 
@@ -632,7 +632,7 @@ Hides character particle effects in first-person view, improving visibility and 
 
 ```
 
- Disables various telemetry systems, reducing background data collection and potential performance overhead.  
+Disables various telemetry systems, reducing background data collection and potential performance overhead.  
 
 ## 🌐 Networking  
 
@@ -643,7 +643,7 @@ Hides character particle effects in first-person view, improving visibility and 
 
 ```
 
- Sets network logging level to 7, which is typically verbose for debugging. 
+Sets network logging level to 7, which is typically verbose for debugging. 
  
 ```json
 {
@@ -652,7 +652,7 @@ Hides character particle effects in first-person view, improving visibility and 
 
 ```
 
- Sets the maximum transmission unit size to 1472, optimizing packet size for network performance and reduce packet fragmentation.
+Sets the maximum transmission unit size to 1472, optimizing packet size for network performance and reduce packet fragmentation.
  
 ```json
 {
@@ -661,7 +661,7 @@ Hides character particle effects in first-person view, improving visibility and 
 
 ```
 
- Controls the buffer size for RakNet resends. 128 is a moderate value for stability. 
+Controls the buffer size for RakNet resends. 128 is a moderate value for stability. 
  
 ```json
 {
@@ -676,7 +676,7 @@ Hides character particle effects in first-person view, improving visibility and 
 }
 ```
 
- Enables various network optimizations for routing, transport, and server update frequency.
+Enables various network optimizations for routing, transport, and server update frequency.
  
 ```json
 {
@@ -685,7 +685,7 @@ Hides character particle effects in first-person view, improving visibility and 
 }
 ```
 
- Sets server update rates to 60Hz, ensuring smooth physics and game logic processing.
+Sets server update rates to 60Hz, ensuring smooth physics and game logic processing.
  
 ```json
 {
@@ -694,7 +694,7 @@ Hides character particle effects in first-person view, improving visibility and 
 
 ```
 
- Controls resend timing based on round-trip time. 1 is minimal delay. 
+Controls resend timing based on round-trip time. 1 is minimal delay. 
  
 ```json
 {
@@ -703,7 +703,7 @@ Hides character particle effects in first-person view, improving visibility and 
 
 ```
 
- Sends ping every second for tighter latency tracking. 
+Sends ping every second for tighter latency tracking. 
  
 ```json
 {
@@ -712,7 +712,7 @@ Hides character particle effects in first-person view, improving visibility and 
 
 ```
 
- Sets ping optimization threshold to 50ms, improving responsiveness.
+Sets ping optimization threshold to 50ms, improving responsiveness.
  
 ```json
 {
@@ -722,7 +722,7 @@ Hides character particle effects in first-person view, improving visibility and 
 
 ```
  
- Controls how often and how much player data is sent over the network. 
+Controls how often and how much player data is sent over the network. 
  
 ```json
 {
@@ -731,7 +731,7 @@ Hides character particle effects in first-person view, improving visibility and 
 }
 ```
 
- Fine-tunes prediction and latency handling for smoother movement and sync.  
+Fine-tunes prediction and latency handling for smoother movement and sync.  
 
 ## 🧱 Geometry & CSG  
 
@@ -743,7 +743,8 @@ Hides character particle effects in first-person view, improving visibility and 
   "DFIntCSGLevelOfDetailSwitchingDistanceL34": 1000
 }
 
-```  
+```
+
 These values define the respective CSG Level-of-Detail (LOD) Transition Distances (L0-L1, L1-L2, L2-L3, and L3-L4). The higher values delay LOD switching for Constructive Solid Geometry (CSG), prioritizing visual fidelity over geometric simplification across a greater viewing range.
 
 Sources:  
