@@ -230,16 +230,16 @@ Before you see the Fast Flags important points:
 
 # 🔧 Order Navigation List
 
-- [Graphics & Rendering (Highest Priority)](#Graphics-&-Rendering-(Highest-Priority))
-- [Engine, Voxel, Terrain, FRM, Threading (Medium Priority)](#Engine,-Voxel,-Terrain,-FRM,-Threading-(Medium-Priority))
-- [Telemetry & Debug Logging (Medium Priority)](#Telemetry-&-Debug-Logging-(Medium-Priority))
-- [Network & CSG (Lower Priority)](#Network-&-CSG-(Lower-Priority))
+- [Graphics & Rendering (Highest Priority)](#graphics-and-rendering)
+- [Engine, Voxel, Terrain, FRM, Threading (Medium Priority)](#Visuals)
+- [Telemetry & Debug Logging (Medium Priority)](#Telementry)
+- [Network & CSG (Lower Priority)](#network-and-csg)
 
 ---
 
 <h1 align="center">Subsystem-Based Sections (Ordered by Priority)</h1>
 
-## Graphics & Rendering (Highest Priority)
+<h2 id="graphics-and-rendering"> Graphics & Rendering (Highest Priority) </h2>
   
 ```json
 {
@@ -270,7 +270,7 @@ Before you see the Fast Flags important points:
 ```
 ---
 
-## Engine, Voxel, Terrain, FRM, Threading (Medium Priority)
+<h2 id="Visuals"> Engine, Voxel, Terrain, FRM, Threading (Medium Priority) </h2>
 
 ```json
 {
@@ -287,7 +287,7 @@ Before you see the Fast Flags important points:
 ```
 ---
 
-## Telemetry & Debug Logging (Medium Priority)
+<h2 id="Telementry"> Telemetry & Debug Logging (Medium Priority) </h2>
 
 ```json
 {
@@ -306,7 +306,7 @@ Before you see the Fast Flags important points:
 ```
 ---
 
-## Network & CSG (Lower Priority)
+<h2 id="network-and-csg"> Network & CSG (Lower Priority) </h2>
 
 ```json
 {
