@@ -343,15 +343,16 @@ Before you see the Fast Flags important points:
 <h1 align="center">Meaning and effect of every Fast Flag</h1>
 
 ## Sections Navigation List
-- [🎮 Task Scheduling and Threading](##🎮-Task-Scheduling-and-Threading)
-- [🖼️ Graphics & Rendering](##🖼️-Graphics-&-Rendering)
-- [🧪 Debug & Determinism](##🧪-Debug-&-Determinism)
-- [🧱 Terrain & Voxel](##🧱-Terrain-&-Voxel)
-- [📡 Telemetry & Analytics](##📡-Telemetry-&-Analytics)
-- [🌐 Networking](##🌐-Networking)
-- [🧱 Geometry & CSG](##🧱-Geometry-&-CSG)
 
-## 🎮 Task Scheduling and Threading
+- [Task Scheduling and Threading](#task-scheduling-and-threading)  
+- [Graphics & Rendering](#graphics--rendering)  
+- [Debug & Determinism](#debug--determinism)  
+- [Terrain & Voxel](#terrain--voxel)  
+- [Telemetry & Analytics](#telemetry--analytics)  
+- [Networking](#networking)  
+- [Geometry & CSG](#geometry--csg) 
+
+## Task Scheduling and Threading
 
 ```json
 {
@@ -377,7 +378,7 @@ Defines the Runtime Maximum Thread Pool Size as 32. This aggressively leverages 
 
 Serves as a Task Scheduler Internal Limit Override. Setting it to False disables a hardcoded FPS ceiling of 2402, allowing the `DFIntTaskSchedulerTargetFps` to fully control the execution frequency.
 
-## 🖼️ Graphics & Rendering
+## Graphics & Rendering
 
 ```json
 {
@@ -509,7 +510,7 @@ Sets padding around fonts, which may affect UI rendering.
 
 Delays fullscreen title bar triggers. A high value like 3600000 effectively disables it.  
 
-## 🧪 Debug & Determinism
+## Debug & Determinism
 
 ```json
 {
@@ -592,7 +593,7 @@ When False, disables manual handling of Alt+Enter fullscreen toggling.
 
 Hides character particle effects in first-person view, improving visibility and performance. 
  
-## 🧱 Terrain & Voxel  
+## Terrain & Voxel  
 
 ```json
 {
@@ -639,7 +640,7 @@ Overrides the FRM (Fast Rendering Mode) quality level. 3 typically corresponds t
 
 Sets grass rendering distance to 0, disabling grass rendering entirely.  
 
-## 📡 Telemetry & Analytics  
+## Telemetry & Analytics  
 
 ```json
 {
@@ -656,7 +657,7 @@ Sets grass rendering distance to 0, disabling grass rendering entirely.
 
 Disables various telemetry systems, reducing background data collection and potential performance overhead.  
 
-## 🌐 Networking  
+## Networking  
 
 ```json
 {
@@ -755,7 +756,7 @@ Controls how often and how much player data is sent over the network.
 
 Fine-tunes prediction and latency handling for smoother movement and sync.  
 
-## 🧱 Geometry & CSG  
+## Geometry & CSG  
 
 ```json
 {
