@@ -433,15 +433,19 @@ Limits the Maximum Concurrent Local Light Updates per frame to 1, reducing the c
 ```
 
 Sets the Minimum Concurrent Local Light Updates per frame to 1, ensuring a consistent (though minimal) update frequency.
-
 ```json
 {
   "FIntRenderShadowmapBias": "75"
 }
 
 ```
-
-Adjusts the Shadow Map Bias Value to 75. This technique is used to mitigate shadow acne artifacts.
+> [!CAUTION]
+> If you set this fflags value to a high number it can cause lighting issues like `Peter Panning`.  
+> **What is `Peter Panning`?**  
+> In Simple Words `Peter Panning` Is A Lighting Issue Where Objects Look Detached From Their Object Theyve Been Casted By.  
+> as this flag is used to change the offset position of a shadow if you set the value to a very high number it can cause this lighting issue.
+  
+Adjusts the Shadow Map Bias Value to 75. This technique is used to mitigate shadow acne artifacts.  
 
 ```json
 {
