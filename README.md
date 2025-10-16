@@ -359,7 +359,7 @@ Defines the Runtime Maximum Thread Pool Size as 32. This aggressively leverages 
 ```json
 {
   "FFlagTaskSchedulerLimitTargetFpsTo2402" : "False"
-{
+}
 ```
 
 Serves as a Task Scheduler Internal Limit Override. Setting it to False disables a hardcoded FPS ceiling of 2402, allowing the `DFIntTaskSchedulerTargetFps` to fully control the execution frequency.
@@ -423,8 +423,7 @@ Sets the Local Light Fade-In Duration to 0 milliseconds, ensuring instantaneous 
 
 ```
 
-Limits the Maximum Concurrent Local Light Updates per frame to 1, reducing the computational load on the lighting subsystem.  
-Sets the Minimum Concurrent Local Light Updates per frame to 1, ensuring a consistent (though minimal) update frequency.  
+Limits the Maximum Concurrent Local Light Updates per frame to 1 (FIntRenderLocalLightUpdatesMax), and sets the Minimum Concurrent Local Light Updates to 1 (FIntRenderLocalLightUpdatesMin), ensuring a minimal and consistent update frequency to reduce computational load.  
 
 ```json
 {
@@ -616,9 +615,9 @@ Overrides the FRM (Fast Rendering Mode) quality level. 3 typically corresponds t
  
 ```json
 {
-  "FIntFRMMax/MinGrassDistance": "0"
+  "FIntFRMMaxGrassDistance": "0",
+  "FIntFRMMinGrassDistance": "0"
 }
-
 ```
 
 Sets grass rendering distance to 0, disabling grass rendering entirely.  
