@@ -140,6 +140,8 @@ Roblox Installation Directory
 
 ```
 
+---
+
 > [!NOTE]
 > As of the change made by roblox on September 29, 2025 with that a broader purge was taken to disable most of the engine-level rendering flags if you have been wondering where the fast flags editor option went in bloxstrap this is the reason roblox did this to prevent unauthorised    client-side Manipulation From Roblox's Perspective some fastflags like FIntRenderShadowIntensity were disabled because:
 >> - It bypassed their engines intended lighting pipeline.
