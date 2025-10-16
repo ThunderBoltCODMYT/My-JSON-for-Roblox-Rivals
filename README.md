@@ -619,8 +619,8 @@ Overrides the FRM (Fast Rendering Mode) quality level. 3 typically corresponds t
  
 ```json
 {
-  "FIntFRMMaxGrassDistance": "0",
-  "FIntFRMMinGrassDistance": "0"
+  "FIntFRMMaxGrassDistance": "0",
+  "FIntFRMMinGrassDistance": "0"
 }
 ```
 
