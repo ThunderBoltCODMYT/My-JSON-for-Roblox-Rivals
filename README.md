@@ -86,32 +86,34 @@
 >>
 >> a Small Whitelist of about 20~ validated fast flags exist:  
 >>> These are the flags Roblox currently allows in ClientAppSettings.json:  
->>>🧱 **Geometry**
->>>> - DFIntCSGLevelOfDetailSwitchingDistance
->>>> - DFIntCSGLevelOfDetailSwitchingDistanceL12
->>>> - DFIntCSGLevelOfDetailSwitchingDistanceL23
+>>>🧱 **Geometry**  
+>>>> - DFIntCSGLevelOfDetailSwitchingDistance  
+>>>> - DFIntCSGLevelOfDetailSwitchingDistanceL12  
+>>>> - DFIntCSGLevelOfDetailSwitchingDistanceL23  
 >>>> - DFIntCSGLevelOfDetailSwitchingDistanceL34
->>>🎨 **Rendering**
->>>> - FFlagHandleAltEnterFullscreenManually
->>>> - DFFlagTextureQualityOverrideEnabled
->>>> - DFIntTextureQualityOverride
->>>> - FIntDebugForceMSAASamples
->>>> - DFFlagDisableDPIScale
->>>> - FFlagDebugGraphicsPreferD3D11
->>>> - FFlagDebugSkyGray
->>>> - DFFlagDebugPauseVoxelizer
->>>> - DFIntDebugFRMQualityLevelOverride
->>>> - FIntFRMMaxGrassDistance
->>>> - FIntFRMMinGrassDistance
->>>> - FFlagDebugGraphicsPreferVulkan
+>>>> - 
+>>>🎨 **Rendering**  
+>>>> - FFlagHandleAltEnterFullscreenManually  
+>>>> - DFFlagTextureQualityOverrideEnabled  
+>>>> - DFIntTextureQualityOverride  
+>>>> - FIntDebugForceMSAASamples  
+>>>> - DFFlagDisableDPIScale  
+>>>> - FFlagDebugGraphicsPreferD3D11  
+>>>> - FFlagDebugSkyGray  
+>>>> - DFFlagDebugPauseVoxelizer  
+>>>> - DFIntDebugFRMQualityLevelOverride  
+>>>> - FIntFRMMaxGrassDistance  
+>>>> - FIntFRMMinGrassDistance  
+>>>> - FFlagDebugGraphicsPreferVulkan  
 >>>> - FFlagDebugGraphicsPreferOpenGL
->>>🖥️ **User Interface**
->>>> - FIntGrassMovementReducedMotionFactor
+>>>> - 
+>>>🖥️ **User Interface**  
+>>>> - FIntGrassMovementReducedMotionFactor  
 >>>
->>>⚠️ **Notes**
->>>> - Any flag not on this list will be ignored, even if injected correctly.
->>>> - Roblox may update this list at any time without warning.
->>>> - Roblox Studio is unaffected—you can still use any FastFlags there.
+>>>⚠️ **Notes**  
+>>>> - Any flag not on this list will be ignored, even if injected correctly.  
+>>>> - Roblox may update this list at any time without warning.  
+>>>> - Roblox Studio is unaffected—you can still use any FastFlags there.  
 
 > [!NOTE]
 > I Know my JSON has many of the `FFlags` that are not in the whitelist but I have made this repo just for the purpose that people can atleast test this JSON in rivals and tell me if it gets them better FPS.
