@@ -751,12 +751,18 @@ Fine-tunes prediction and latency handling for smoother movement and sync.
 
 These values define the respective CSG Level-of-Detail (LOD) Transition Distances (L0-L1, L1-L2, L2-L3, and L3-L4). The higher values delay LOD switching for Constructive Solid Geometry (CSG), prioritizing visual fidelity over geometric simplification across a greater viewing range.
 
+# FFlag Presets
+- [BetterFPS.json](./BetterFPS.json)
+-
+-
+
 Sources:  
 GitHub: Roblox Performance FFlags  
 Roblox DevForum: Fast Flag Allowlist  
 Bloxstrap FastFlags Guide  
 Stoofis Fast Flags  
-Dantezz025/Roblox-Fast-Flags  
+Dantezz025  
+RBX FFLAGS  
 
 Update Timestamps : October 5th, 2025
 12 October 2025
