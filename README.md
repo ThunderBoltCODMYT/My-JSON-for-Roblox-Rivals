@@ -342,7 +342,7 @@ Before you see the Fast Flags important points:
 
 ```json
 {
-  "DFIntTaskSchedulerFPS" : "180"
+  "DFIntTaskSchedulerTargetFPS" : "180"
 }
 ```
 
@@ -423,7 +423,8 @@ Sets the Local Light Fade-In Duration to 0 milliseconds, ensuring instantaneous 
 
 ```
 
-Limits the Maximum Concurrent Local Light Updates per frame to 1, reducing the computational load on the lighting subsystem. 
+Limits the Maximum Concurrent Local Light Updates per frame to 1, reducing the computational load on the lighting subsystem.  
+Sets the Minimum Concurrent Local Light Updates per frame to 1, ensuring a consistent (though minimal) update frequency.  
 
 ```json
 {
@@ -432,7 +433,8 @@ Limits the Maximum Concurrent Local Light Updates per frame to 1, reducing the c
 
 ```
 
-Sets the Minimum Concurrent Local Light Updates per frame to 1, ensuring a consistent (though minimal) update frequency.
+Sets The Shadow Intensity to 0.
+
 ```json
 {
   "FIntRenderShadowmapBias": "75"
@@ -774,3 +776,4 @@ GitHub:
 
 Update Timestamps : October 5th, 2025
 12 October 2025
+16 October 2025
