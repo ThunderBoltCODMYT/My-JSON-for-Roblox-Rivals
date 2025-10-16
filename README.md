@@ -759,12 +759,18 @@ These values define the respective CSG Level-of-Detail (LOD) Transition Distance
 # Files already described in the README
 - [`RobloxRivalsFFlags.json`](./RobloxRivalsFFlags.json)
 
+# The only whitelist FFlags
+> [!NOTE]
+> you can modify the values in this json as per your choice but do keep in mind that the FFlag `FFlagDebugGraphicsPreferVulkan` causes lighting issues.  
+> And also Roblox has clearly said that they can make updates in thsi whitelist without any prior warning so keep track of the Dev Forum for more changes as I cannot Consistently update this README time-to-time.  
+- [`Whitelist.json`](./Whitelist.json)
+
 Sources & Credit:  
-GitHub: Roblox Performance FFlags  
-Stoofis Fast Flags  
-Dantezz025  
-RBX FFLAGS  
-Roblox DevForum: Fast Flag Allowlist
+GitHub:  
+[stoofis Fast Flags](https://github.com/stoofis/Roblox-Fast-Flags)  
+[Dantezz025](https://github.com/Dantezz025/Roblox-Fast-Flags)  
+[RBX FFLAGS](https://github.com/Dthesle/RBXFFLAGS)  
+[Roblox DevForum: Fast Flag Allowlist](https://devforum.roblox.com/t/allowlist-for-local-client-configuration-via-fast-flags/3966569)  
 
 Update Timestamps : October 5th, 2025
 12 October 2025
