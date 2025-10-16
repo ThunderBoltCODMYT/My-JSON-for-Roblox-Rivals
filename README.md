@@ -342,6 +342,15 @@ Before you see the Fast Flags important points:
 
 <h1 align="center">Meaning and effect of every Fast Flag</h1>
 
+## Sections Navigation List
+- [🎮 Task Scheduling and Threading](##🎮-Task-Scheduling-and-Threading)
+- [🖼️ Graphics & Rendering](##🖼️-Graphics-&-Rendering)
+- [🧪 Debug & Determinism](##🧪-Debug-&-Determinism)
+- [🧱 Terrain & Voxel](##🧱-Terrain-&-Voxel)
+- [📡 Telemetry & Analytics](##📡-Telemetry-&-Analytics)
+- [🌐 Networking](##🌐-Networking)
+- [🧱 Geometry & CSG](##🧱-Geometry-&-CSG)
+
 ## 🎮 Task Scheduling and Threading
 
 ```json
