@@ -1,20 +1,20 @@
 {
-  "DFIntCSGLevelOfDetailSwitchingDistance"
-  "DFIntCSGLevelOfDetailSwitchingDistanceL12"
-  "DFIntCSGLevelOfDetailSwitchingDistanceL23"
-  "DFIntCSGLevelOfDetailSwitchingDistanceL34"
-  "FFlagHandleAltEnterFullscreenManually"
-  "DFFlagTextureQualityOverrideEnabled"
-  "DFIntTextureQualityOverride"
-  "FIntDebugForceMSAASamples"
-  "DFFlagDisableDPIScale"
-  "FFlagDebugGraphicsPreferD3D11"
-  "FFlagDebugSkyGray"
-  "DFFlagDebugPauseVoxelizer"
-  "DFIntDebugFRMQualityLevelOverride"
-  "FIntFRMMaxGrassDistance"
-  "FIntFRMMinGrassDistance"
-  "FFlagDebugGraphicsPreferVulkan"
-  "FFlagDebugGraphicsPreferOpenGL"
-  "FIntGrassMovementReducedMotionFactor"
+  "DFIntCSGLevelOfDetailSwitchingDistance": 150,
+  "DFIntCSGLevelOfDetailSwitchingDistanceL12": 100,
+  "DFIntCSGLevelOfDetailSwitchingDistanceL23": 200,
+  "DFIntCSGLevelOfDetailSwitchingDistanceL34": 300,
+  "FFlagHandleAltEnterFullscreenManually": "True",
+  "DFFlagTextureQualityOverrideEnabled": "True",
+  "DFIntTextureQualityOverride": 2,
+  "FIntDebugForceMSAASamples": 4,
+  "DFFlagDisableDPIScale": "False",
+  "FFlagDebugGraphicsPreferD3D11": "True",
+  "FFlagDebugSkyGray": "False",
+  "DFFlagDebugPauseVoxelizer": "False",
+  "DFIntDebugFRMQualityLevelOverride": 1,
+  "FIntFRMMaxGrassDistance": 500,
+  "FIntFRMMinGrassDistance": 50,
+  "FFlagDebugGraphicsPreferVulkan": "False",
+  "FFlagDebugGraphicsPreferOpenGL": "False",
+  "FIntGrassMovementReducedMotionFactor": 0.5
 }
