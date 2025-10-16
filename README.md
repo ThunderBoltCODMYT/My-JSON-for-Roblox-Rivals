@@ -445,10 +445,10 @@ Sets The Shadow Intensity to 0.
 > If you set this fflags value to a high number it can cause lighting issues like `Peter Panning`.  
 > **What is `Peter Panning`?**  
 > In Simple Words `Peter Panning` Is A Lighting Issue Where Objects Look Detached From Their Object Theyve Been Casted By.  
-> as this flag is used to change the offset position of a shadow if you set the value to a very high number it can cause this lighting issue.
-> And the opposite of that is `Shadow Acne`.
-> **What Is Shadow Acne?**
-> Shadow acne is a visual artifact manifested as an erroneous pattern of self-shadowing (speckling, stripes, or small-scale noise) appearing on surfaces that should be smoothly lit or shadowed. It occurs when a point being rendered is incorrectly classified as being in its own shadow. It happens when you set the value of this above FFlag too low.  
+> as this flag is used to change the offset position of a shadow if you set the value to a very high number it can cause this lighting issue.  
+> And the opposite of that is `Shadow Acne`.  
+> **What Is Shadow Acne?**  
+> Shadow acne is a visual artifact manifested as an erroneous pattern of self-shadowing (speckling, stripes, or small-scale noise) appearing  on surfaces that should be smoothly lit or shadowed. It occurs when a point being rendered is incorrectly classified as being in its own  shadow. It happens when you set the value of this above FFlag too low.  
   
 Adjusts the Shadow Map Bias Value to 75. This technique is used to mitigate shadow acne artifacts.  
 
