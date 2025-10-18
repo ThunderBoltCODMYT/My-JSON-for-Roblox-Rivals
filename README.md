@@ -154,27 +154,34 @@ Roblox Installation Directory
 > [!NOTE]
 > There is a difference between Roblox `ClientSettings.json` syntax and raw `json` syntax for instance:  
 > this is how raw `json` syntax looks like:  
+> 
 > ```json
 > {
 >     "FFlagDebugSkyGray": true
 > }
 > ```
+> 
 > and this is how the Roblox `ClientSettings.json` syntax looks like:
+> 
 > ```json
 > {
 >     "FFlagDebugSkyGray": "True"
 > }
 > ```
+> 
 > **Differences:**  
 > Roblox:  
 > - Most of the values in Roblox `ClientSettings.json` are in double quotes "" .
 > - and the first letter of the `boolean` values have to be capital - `"True"` / `"False"`  
-> - there are some values that do not have to be quoted like `null`, but other than that all of the other values like `booleans`, `strings` and `numbers` have to be quoted.  
+> - there are some values that do not have to be quoted like `null`, but other than that all of the other values like `booleans`, `strings` and `numbers` have to be quoted.
+> 
 > Raw:  
 > - The values are not in "" .
 > - the `boolean` values first letter does not have to be capital - true/false  
 > - but again even in raw `json` values like `Numbers`, `booleans`, `null` values, and `arrays` and `objects` dont have to be quoted, while all other values in `strings` have to be quoted in "" .  
 > **In this README I am using Roblox's `ClientSettings.json` file `syntax`, however you can use any `syntax` the raw `JSON` `syntax` or Roblox's `ClientSettings.json` `syntax` both will work with no issues.**
+
+---
 
 # Who Should Use This?
 This repository is intended for Roblox engineers and advanced power users who understand the implications and risks of modifying Fast Flags. Improper flag usage can destabilize the client or violate game/server policies.
@@ -182,9 +189,9 @@ This repository is intended for Roblox engineers and advanced power users who un
 ---
 
 # My FFlags  
-Before you see the Fast Flags important points:
-> - It does not matter on which bootstrapper you are using , it will not change how the fast flags take effect.
-> - However the amount of FPS you get might differ depending on the bootstrapper you are using.
+Before you see the Fast Flags important points:  
+> - It does not matter on which bootstrapper you are using , it will not change how the fast flags take effect.  
+> - However the amount of FPS you get might differ depending on the bootstrapper you are using.  
 
 ## Actual JSON Code:
 ```json
