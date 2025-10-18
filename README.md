@@ -404,6 +404,8 @@ Sets the Target Task Scheduler Frequency to 180 frames per second (FPS). Note: S
 
 Defines the Runtime Maximum Thread Pool Size as 32. This aggressively leverages multi-core architectures to maximize parallel processing performance.Note: Set this value to something lower like 16 if you have a low-end cpu which dosent have much threads.
 
+<hr size="1px" width="100%">
+
 ```json
 {
   "FFlagTaskSchedulerLimitTargetFpsTo2402" : "False"
@@ -411,6 +413,8 @@ Defines the Runtime Maximum Thread Pool Size as 32. This aggressively leverages 
 ```
 
 Serves as a Task Scheduler Internal Limit Override. Setting it to False disables a hardcoded FPS ceiling of 2402, allowing the `DFIntTaskSchedulerTargetFps` to fully control the execution frequency.
+
+<hr size="1px" width="100%">
 
 ## Graphics & Rendering
 
@@ -421,7 +425,9 @@ Serves as a Task Scheduler Internal Limit Override. Setting it to False disables
 ```
 
 Enables Manual Texture Quality Control, allowing explicit specification of the texture detail level.
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "DFIntTextureQualityOverride" : "3"
@@ -429,7 +435,9 @@ Enables Manual Texture Quality Control, allowing explicit specification of the t
 ```
 
 Sets the Forced Texture Quality Level to 3, which corresponds to the High fidelity preset.
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "DFIntCullFactorPixelThresholdShadowMapHighQuality": "2147483647",
@@ -439,6 +447,8 @@ Sets the Forced Texture Quality Level to 3, which corresponds to the High fideli
 
 `DFIntCullFactorPixelThresholdShadowMapHighQuality` Sets the High-Quality Shadow Map Culling Threshold to its maximum value, effectively preventing the culling of high-quality shadows based on screen-space pixel density and `DFIntCullFactorPixelThresholdShadowMapLowQuality` Sets the Low-Quality Shadow Map Culling Threshold to its maximum value, ensuring low-quality shadows are always rendered.
 
+<hr size="1px" width="100%">
+
 ```json
 {
   "FIntDebugForceMSAASamples": "1"
@@ -446,6 +456,8 @@ Sets the Forced Texture Quality Level to 3, which corresponds to the High fideli
 ```
 
 Explicitly sets the Forced Multi-Sample Anti-Aliasing (MSAA) Sample Count to 1, minimizing multi-sampling while potentially reducing certain aliasing forms.
+
+<hr size="1px" width="100%">
 
 ```json
 {
@@ -455,6 +467,8 @@ Explicitly sets the Forced Multi-Sample Anti-Aliasing (MSAA) Sample Count to 1, 
 
 Disables the rendering of individual Grass Detail Strands to yield a measurable gain in rendering performance. 
 
+<hr size="1px" width="100%">
+
 ```json
 {
   "FIntRenderLocalLightFadeInMs": "0"
@@ -462,7 +476,9 @@ Disables the rendering of individual Grass Detail Strands to yield a measurable 
 ```
 
 Sets the Local Light Fade-In Duration to 0 milliseconds, ensuring instantaneous light transitions.
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FIntRenderLocalLightUpdatesMax": "1",
@@ -471,7 +487,9 @@ Sets the Local Light Fade-In Duration to 0 milliseconds, ensuring instantaneous 
 
 ```
 
-Limits the Maximum Concurrent Local Light Updates per frame to 1 (FIntRenderLocalLightUpdatesMax), and sets the Minimum Concurrent Local Light Updates to 1 (FIntRenderLocalLightUpdatesMin), ensuring a minimal and consistent update frequency to reduce computational load.  
+Limits the Maximum Concurrent Local Light Updates per frame to 1 `FIntRenderLocalLightUpdatesMax`, and sets the Minimum Concurrent Local Light Updates to 1 `FIntRenderLocalLightUpdatesMin`, ensuring a minimal and consistent update frequency to reduce computational load.  
+
+<hr size="1px" width="100%">
 
 ```json
 {
@@ -481,6 +499,8 @@ Limits the Maximum Concurrent Local Light Updates per frame to 1 (FIntRenderLoca
 ```
 
 Sets The Shadow Intensity to 0.
+
+<hr size="1px" width="100%">
 
 ```json
 {
@@ -500,6 +520,8 @@ Sets The Shadow Intensity to 0.
   
 Adjusts the Shadow Map Bias Value to 75. This technique is used to mitigate shadow acne artifacts.  
 
+<hr size="1px" width="100%">
+
 ```json
 {
   "FFlagDisablePostFx": "True"
@@ -508,7 +530,9 @@ Adjusts the Shadow Map Bias Value to 75. This technique is used to mitigate shad
 ```
 
 Serves as a Post-Processing Pipeline Bypass, disabling effects like Bloom and Depth of Field to improve visual clarity and maximize rendering throughput.
-  
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FFlagDebugGraphicsPreferD3D11FL10": "True"
@@ -516,7 +540,9 @@ Serves as a Post-Processing Pipeline Bypass, disabling effects like Bloom and De
 ```
 
 Forces the client to prefer DirectX 11 rendering, which is more stable and performant on modern systems. 
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FFlagDebugSkyGray": "True"
@@ -526,6 +552,8 @@ Forces the client to prefer DirectX 11 rendering, which is more stable and perfo
 
 Replaces the dynamic skybox with a flat gray sky, reducing GPU load. 
 
+<hr size="1px" width="100%">
+
 ```json
 {
   "FIntFontSizePadding": "4"
@@ -534,7 +562,9 @@ Replaces the dynamic skybox with a flat gray sky, reducing GPU load.
 ```
 
 Sets padding around fonts, which may affect UI rendering.  
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FIntFullscreenTitleBarTriggerDelayMillis": "3600000"
@@ -543,6 +573,8 @@ Sets padding around fonts, which may affect UI rendering.
 ```
 
 Delays fullscreen title bar triggers. A high value like 3600000 effectively disables it.  
+
+<hr size="1px" width="100%">
 
 ## Debug & Determinism
 
@@ -554,7 +586,9 @@ Delays fullscreen title bar triggers. A high value like 3600000 effectively disa
 ```
 
 When False, hides the FPS counter.
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FFlagDebugForceFutureIsBrightPhase2": "True"
@@ -563,7 +597,9 @@ When False, hides the FPS counter.
 ```
 
 Forces the newer lighting system for consistency and testing.  
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FFlagDebugForceFSMCPULightCulling": "True"
@@ -572,7 +608,9 @@ Forces the newer lighting system for consistency and testing.
 ```
 
 Enables CPU-based light culling, which may improve performance in certain scenes.  
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FFlagNewLightAttenuation": "True"
@@ -581,7 +619,9 @@ Enables CPU-based light culling, which may improve performance in certain scenes
 ```
 
 Enables improved light attenuation calculations for more realistic lighting.  
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FIntDebugTextureManagerSkipMips": "0"
@@ -590,7 +630,9 @@ Enables improved light attenuation calculations for more realistic lighting.
 ```
 
 Controls mipmap skipping. 0 disables skipping, ensuring full texture detail. 
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FFlagDebugCheckRenderThreading": "True"
@@ -599,7 +641,9 @@ Controls mipmap skipping. 0 disables skipping, ensuring full texture detail.
 ```
 
 Enables threading checks for render operations, useful for debugging performance bottlenecks.  
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FFlagDebugRenderingSetDeterministic": "True"
@@ -608,7 +652,9 @@ Enables threading checks for render operations, useful for debugging performance
 ```
 
 Forces deterministic rendering behavior, useful for debugging and consistency.  
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FFlagHandleAltEnterFullscreenManually": "False"
@@ -617,7 +663,9 @@ Forces deterministic rendering behavior, useful for debugging and consistency.
 ```
 
 When False, disables manual handling of Alt+Enter fullscreen toggling.  
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FFlagUserHideCharacterParticlesInFirstPerson": "True"
@@ -626,6 +674,8 @@ When False, disables manual handling of Alt+Enter fullscreen toggling.
 ```
 
 Hides character particle effects in first-person view, improving visibility and performance. 
+
+<hr size="1px" width="100%">
  
 ## Terrain & Voxel  
 
@@ -637,7 +687,9 @@ Hides character particle effects in first-person view, improving visibility and 
 ```
 
 Pauses the voxelizer, reducing background processing load.  
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "DFFlagDebugRenderForceTechnologyVoxel": "True"
@@ -646,7 +698,9 @@ Pauses the voxelizer, reducing background processing load.
 ```
 
 Forces voxel-based rendering, which may simplify lighting and geometry calculations.  
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FIntTerrainArraySliceSize": "0"
@@ -655,7 +709,9 @@ Forces voxel-based rendering, which may simplify lighting and geometry calculati
 ```
 
 Controls terrain slice size. 0 disables slicing, reducing terrain complexity.  
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "DFIntDebugFRMQualityLevelOverride": "3"
@@ -664,7 +720,9 @@ Controls terrain slice size. 0 disables slicing, reducing terrain complexity.
 ```
 
 Overrides the FRM (Fast Rendering Mode) quality level. 3 typically corresponds to high quality.  
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FIntFRMMaxGrassDistance": "0",
@@ -673,6 +731,8 @@ Overrides the FRM (Fast Rendering Mode) quality level. 3 typically corresponds t
 ```
 
 Sets grass rendering distance to 0, disabling grass rendering entirely.  
+
+<hr size="1px" width="100%">
 
 ## Telemetry & Analytics  
 
@@ -691,6 +751,8 @@ Sets grass rendering distance to 0, disabling grass rendering entirely.
 
 Disables various telemetry systems, reducing background data collection and potential performance overhead.  
 
+<hr size="1px" width="100%">
+
 ## Networking  
 
 ```json
@@ -701,7 +763,9 @@ Disables various telemetry systems, reducing background data collection and pote
 ```
 
 Sets network logging level to 7, which is typically verbose for debugging. 
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "DFIntConnectionMTUSize": 1472
@@ -710,7 +774,9 @@ Sets network logging level to 7, which is typically verbose for debugging.
 ```
 
 Sets the maximum transmission unit size to 1472, optimizing packet size for network performance and reduce packet fragmentation.
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FIntRakNetResendBufferArrayLength": "128"
@@ -719,7 +785,9 @@ Sets the maximum transmission unit size to 1472, optimizing packet size for netw
 ```
 
 Controls the buffer size for RakNet resends. 128 is a moderate value for stability. 
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "FFlagOptimizeNetworkRouting": "True",
@@ -734,7 +802,9 @@ Controls the buffer size for RakNet resends. 128 is a moderate value for stabili
 ```
 
 Enables various network optimizations for routing, transport, and server update frequency.
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "DFIntServerPhysicsUpdateRate": "60",
@@ -743,7 +813,9 @@ Enables various network optimizations for routing, transport, and server update 
 ```
 
 Sets server update rates to 60Hz, ensuring smooth physics and game logic processing.
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "DFIntRakNetResendRttMultiple": "1"
@@ -752,6 +824,8 @@ Sets server update rates to 60Hz, ensuring smooth physics and game logic process
 ```
 
 Controls resend timing based on round-trip time. 1 is minimal delay. 
+
+<hr size="1px" width="100%">
  
 ```json
 {
@@ -761,7 +835,9 @@ Controls resend timing based on round-trip time. 1 is minimal delay.
 ```
 
 Sends ping every second for tighter latency tracking. 
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "DFIntOptimizePingThreshold": "50"
@@ -770,7 +846,9 @@ Sends ping every second for tighter latency tracking.
 ```
 
 Sets ping optimization threshold to 50ms, improving responsiveness.
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "DFIntPlayerNetworkUpdateQueueSize": "20",
@@ -780,7 +858,9 @@ Sets ping optimization threshold to 50ms, improving responsiveness.
 ```
  
 Controls how often and how much player data is sent over the network. 
- 
+
+<hr size="1px" width="100%">
+
 ```json
 {
   "DFIntNetworkLatencyTolerance": "1",
@@ -789,6 +869,8 @@ Controls how often and how much player data is sent over the network.
 ```
 
 Fine-tunes prediction and latency handling for smoother movement and sync.  
+
+<hr size="1px" width="100%">
 
 ## Geometry & CSG  
 
@@ -804,13 +886,19 @@ Fine-tunes prediction and latency handling for smoother movement and sync.
 
 These values define the respective CSG Level-of-Detail (LOD) Transition Distances (L0-L1, L1-L2, L2-L3, and L3-L4). The higher values delay LOD switching for Constructive Solid Geometry (CSG), prioritizing visual fidelity over geometric simplification across a greater viewing range.
 
+<hr size="1px" width="100%">
+
 # FFlag Presets
 - [`BetterFPS.json`](./BetterFPS.json)
 - [`BetterPing.json`](./BetterPing.json)
 - [`DisableTelementry.json`](./DisableTelementry.json)
 
+<hr size="1px" width="100%">
+
 # Files already described in the README
 - [`RobloxRivalsFFlags.json`](./RobloxRivalsFFlags.json)
+
+<hr size="1px" width="100%">
 
 # The only whitelist FFlags
 > [!NOTE]
@@ -819,6 +907,8 @@ These values define the respective CSG Level-of-Detail (LOD) Transition Distance
 > and also this is not a usable preset just to tell you because I literally just copied the fflags from the whitellist and gave them random values you can change the values to make sure there are no errors in your json if you want the whitelist I mentioned it above at the starting of the `README` after some lines or click the link below: `Roblox DevForum: Fast Flag Allowlist`.
 
 - [`Whitelist.json`](./Whitelist.json)
+
+<hr size="1px" width="100%">
 
 Sources & Credit:  
 GitHub:  
@@ -830,3 +920,5 @@ GitHub:
 Update Timestamps : October 5th, 2025(the original date of the creation of this repo.)  
 12 October 2025  
 16 October 2025  
+
+<hr size="5px" width="100%">
