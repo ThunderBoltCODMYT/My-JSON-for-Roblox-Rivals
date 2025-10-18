@@ -91,7 +91,7 @@
 >>>> - DFIntCSGLevelOfDetailSwitchingDistanceL12  
 >>>> - DFIntCSGLevelOfDetailSwitchingDistanceL23  
 >>>> - DFIntCSGLevelOfDetailSwitchingDistanceL34
->>>> - 
+>>>> 
 >>>🎨 **Rendering**  
 >>>> - FFlagHandleAltEnterFullscreenManually  
 >>>> - DFFlagTextureQualityOverrideEnabled  
@@ -106,7 +106,7 @@
 >>>> - FIntFRMMinGrassDistance  
 >>>> - FFlagDebugGraphicsPreferVulkan  
 >>>> - FFlagDebugGraphicsPreferOpenGL
->>>> - 
+>>>> 
 >>>🖥️ **User Interface**  
 >>>> - FIntGrassMovementReducedMotionFactor  
 >>>
