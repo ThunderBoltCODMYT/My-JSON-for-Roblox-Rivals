@@ -394,13 +394,15 @@ Before you see the Fast Flags important points:
 
 Sets the Target Task Scheduler Frequency to 180 frames per second (FPS). Note: Synchronization with the display's native refresh rate is recommended for optimal frame pacing.
 
+<hr size="1px" width="100%">
+
 ```json
 {
   "FIntRuntimeMaxNumOfThreads" : "32"
 }
 ```
 
-Defines the Runtime Maximum Thread Pool Size as 32. This aggressively leverages multi-core architectures to maximize parallel processing performance. 
+Defines the Runtime Maximum Thread Pool Size as 32. This aggressively leverages multi-core architectures to maximize parallel processing performance.Note: Set this value to something lower like 16 if you have a low-end cpu which dosent have much threads.
 
 ```json
 {
