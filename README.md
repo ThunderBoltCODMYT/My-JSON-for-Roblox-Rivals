@@ -135,8 +135,8 @@ Roblox Installation Directory
 └── Versions
     └── version-xxxxxxxxxxxxxxxx
         ├── RobloxPlayerBeta.exe
-        └── ClientSettings
-            └── ClientAppSettings.json
+        └── ClientSettings -->(Parent Folder)
+            └── ClientAppSettings.json -->(Child File)
 
 ```
 
