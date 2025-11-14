@@ -181,6 +181,10 @@ Roblox Installation Directory
 > - but again even in raw `json` values like `Numbers`, `booleans`, `null` values, and `arrays` and `objects` dont have to be quoted, while all other values in `strings` have to be quoted in "" .  
 > **In this README I am using Roblox's `ClientSettings.json` file `syntax`, however you can use any `syntax` the raw `JSON` `syntax` or Roblox's `ClientSettings.json` `syntax` both will work with no issues.**
 
+
+>[!NOTE]
+>Roblox's ```ClientAppSettings.json``` also uses PascalCase and raw ```JSON``` uses camelCase, if you do not know in PascalCase every word's first letter has to be capital and in camelCase the first letter of the first word is always lower-case and the remaining words first letter is always Upper-case
+ 
 ---
 
 # Who Should Use This?
