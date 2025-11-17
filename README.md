@@ -140,6 +140,10 @@ Roblox Installation Directory
 
 ```
 
+> [!TIP]
+> FUN FACT: Bootstrappers solve one of the most major problems, if you are someone who dosent use bootstrappers and manually edits the ```ClientAppSettings.json``` file you would know that everytime roblox drops a new update(that is almost weekly), a new version-xxxxxxxx folder is created and the ```ClientAppSettings.json``` is resetted everytime a new version folder is created meaning you have to reapply your fast flags by editing the file like on a weekly-basis how bootstrappers work is by automating the task so the user dosent have to do it like everytime on a weekly-basis.
+
+
 ---
 
 > [!NOTE]
