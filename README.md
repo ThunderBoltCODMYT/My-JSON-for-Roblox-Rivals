@@ -15,7 +15,7 @@
 > [!TIP]
 > What exactly are Fast Flags and custom mods and what do they do? How do they help us?
 >
-> What Are Fast Flags?  
+> <details><summary>What Are Fast Flags?</summary>
 >> Fast Flags are internal configuration switches used by Roblox to control engine behavior. Think of them as hidden toggles that developers use to:
 >> - Enable or disable features
 >> - Set performance thresholds
@@ -92,21 +92,22 @@
 >		<td>A fast-variable that is loaded by the server and<br/>sent to the client.</td>
 >	</tr>
 > </table>
->
-> What Are Custom Mods?  
+> </details>
+> <details><summary>What Are Custom Mods?</summary>
 >> Custom mods are user-defined configurations that override default FastFlag values. These mods are:
 >> - Written in JSON or injected via tools like Bloxstrap
 >> - Designed to optimize performance, reduce latency, or disable unwanted effects
 >> - Often tailored for specific hardware (e.g. legacy CPUs, low-end GPUs)
->> Mods let you take control of the engine—not just play the game, but engineer it.
->
-> Why Should we use Fast Flags?  
+>> Mods let you take control of the engine—not just play the game, but engineer it. </details>
+> 
+> <details><summary>Why Should we use Fast Flags?</summary>
 >> Well There are Several Reasons:  
 >> - Unlock the most fps you can out of your machine.  
 >> - Lower Latency.  
 >> - Disable PostFX.  
 >> - Optimize Roblox According To Your Hardware.  
->> - Network Tweaks.  
+>> - Network Tweaks.
+> </details>
 
 > [!NOTE]
 > I have described what all of these fast flags do at the end.
@@ -133,13 +134,13 @@
 >>
 >> a Small Whitelist of about 20~ validated fast flags exist:  
 >>> These are the flags Roblox currently allows in ClientAppSettings.json:  
->>>🧱 **Geometry**  
+>>> <details><summary>🧱 **Geometry**  </summary>
 >>>> - DFIntCSGLevelOfDetailSwitchingDistance  
 >>>> - DFIntCSGLevelOfDetailSwitchingDistanceL12  
 >>>> - DFIntCSGLevelOfDetailSwitchingDistanceL23  
 >>>> - DFIntCSGLevelOfDetailSwitchingDistanceL34
->>>> 
->>>🎨 **Rendering**  
+>>>> </details>
+>>> <details><summary>🎨 **Rendering**  </summary>
 >>>> - FFlagHandleAltEnterFullscreenManually  
 >>>> - DFFlagTextureQualityOverrideEnabled  
 >>>> - DFIntTextureQualityOverride  
@@ -153,14 +154,14 @@
 >>>> - FIntFRMMinGrassDistance  
 >>>> - FFlagDebugGraphicsPreferVulkan  
 >>>> - FFlagDebugGraphicsPreferOpenGL
->>>> 
->>>🖥️ **User Interface**  
+>>>> </details>
+>>> <details><summary>🖥️ **User Interface**  </summary>
 >>>> - FIntGrassMovementReducedMotionFactor  
->>>
->>>⚠️ **Notes**  
+>>> </details>
+>>> <details><summary>⚠️ **Notes**  </summary>
 >>>> - Any flag not on this list will be ignored, even if injected correctly.  
 >>>> - Roblox may update this list at any time without warning.  
->>>> - Roblox Studio is unaffected—you can still use any FastFlags there.  
+>>>> - Roblox Studio is unaffected—you can still use any FastFlags there. </details> 
 
 > [!NOTE]
 > I Know my JSON has many of the `FFlags` that are not in the whitelist but I have made this repo just for the purpose that people can atleast test this JSON in rivals and tell me if it gets them better FPS.
@@ -205,7 +206,7 @@ Roblox Installation Directory
 > USE THEM AT YOUR OWN RISK
 
 > [!NOTE]
-> There is a difference between Roblox `ClientSettings.json` syntax and raw `json` syntax for instance:  
+> There is a difference between Roblox `ClientAppSettings.json` syntax and raw `json` syntax for instance:  
 > this is how raw `json` syntax looks like:  
 > 
 > ```json
@@ -214,7 +215,7 @@ Roblox Installation Directory
 > }
 > ```
 > 
-> and this is how the Roblox `ClientSettings.json` syntax looks like:
+> and this is how the Roblox `ClientAppSettings.json` syntax looks like:
 > 
 > ```json
 > {
@@ -225,7 +226,7 @@ Roblox Installation Directory
 > **Differences:**
 > 
 > Roblox:
-> - Most of the values in Roblox `ClientSettings.json` are in double quotes "" .
+> - Most of the values in Roblox `ClientAppSettings.json` are in double quotes "" .
 > - and the first letter of the `boolean` values have to be capital - `"True"` / `"False"`  
 > - all of the values like `booleans`, `strings` and `numbers` have to be quoted.
 > 
@@ -241,19 +242,23 @@ Roblox Installation Directory
  
 ---
 
-# Who Should Use This?
+<details> <summary> <h4>Who Should Use This? </h4></summary>
 
 This repository is intended for Roblox engineers and advanced power users who understand the implications and risks of modifying Fast Flags. Improper flag usage can destabilize the client or violate game/server policies.
+</details>
 
----
 
-# My FFlags  
+<details>
+    <summary><h4>My FFlags</h4></summary>
 
 Before you see the Fast Flags important points:  
 > - It does not matter on which bootstrapper you are using , it will not change how the fast flags take effect.  
-> - However the amount of FPS you get might differ depending on the bootstrapper you are using.  
+> - However the amount of FPS you get might differ depending on the bootstrapper you are using.
+ 
+</details>
 
 ## Actual JSON Code:
+
 ```json
 {
   "DFIntTaskSchedulerTargetFps": "180",
@@ -322,14 +327,18 @@ Before you see the Fast Flags important points:
   "DFIntCSGLevelOfDetailSwitchingDistanceL34": 1000
 }
 ```
+
 ---
 
-# 🔧 Order Navigation List
+<details> 
+    <summary><h3>🔧 Order Navigation List</h3></summary>
 
 - [Graphics & Rendering (Highest Priority)](#graphics-and-rendering)
 - [Engine, Voxel, Terrain, FRM, Threading (Medium Priority)](#Visuals)
 - [Telemetry & Debug Logging (Medium Priority)](#Telementry)
 - [Network & CSG (Lower Priority)](#network-and-csg)
+
+</details>
 
 ---
 
@@ -452,7 +461,9 @@ Before you see the Fast Flags important points:
 }
 ```
 
-Sets the Target Task Scheduler Frequency to 180 frames per second (FPS). Note: Synchronization with the display's native refresh rate is recommended for optimal frame pacing.
+Sets the Target Task Scheduler Frequency to 180 frames per second (FPS). 
+> [!NOTE]
+> Synchronization with the display's native refresh rate is recommended for optimal frame pacing.
 
 <hr size="1px" width="100%">
 
@@ -961,6 +972,7 @@ These values define the respective CSG Level-of-Detail (LOD) Transition Distance
 <hr size="1px" width="100%">
 
 # The only whitelist FFlags
+
 > [!NOTE]
 > you can modify the values in this json as per your choice but do keep in mind that the FFlag `FFlagDebugGraphicsPreferVulkan` causes lighting issues.  
 > And also Roblox has clearly said that they can make updates in this whitelist without any prior warning so keep track of the Dev Forum for more changes as I cannot Consistently update this README time-to-time.
@@ -980,5 +992,6 @@ GitHub:
 Update Timestamps : October 5th, 2025(the original date of the creation of this repo.)  
 12 October 2025  
 16 October 2025  
+17 December 2025
 
 <hr size="5px" width="100%">
