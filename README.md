@@ -29,12 +29,12 @@
 >>   | `FInt`                 | `Int`      | `Fast Integer`                     |
 >>   | `FString`              | `String`   | `Fast String`                      |
 >>   | `FLog`                 | `Boolean`  | `Fast Log`                         |
->>   | `DFFlag`               | `Boolean`  | `Debug Fast Flag`                  |
->>   | `DFInt`                | `Int`      | `Debug Fast Integer`               |
->>   | `DFString`             | `String`   | `Debug Fast String`                |
+>>   | `DFFlag`               | `Boolean`  | `Dynamic Fast Flag`                  |
+>>   | `DFInt`                | `Int`      | `Dynamic Fast Integer`               |
+>>   | `DFString`             | `String`   | `Dynamic Fast String`                |
 >>   | `DFFlag`               | `String`   | `Dynamic Fast Flag`                |
->>   | `SFFlag`               | `Boolean`  | `Studio Fast Flag`                 |
->>   | `SFInt`                | `Int`      | `Studio Fast Integer`              |
+>>   | `SFFlag`               | `Boolean`  | `Synchronized Fast Flag`                 |
+>>   | `SFInt`                | `Int`      | `Synchronized Fast Integer`              |
 >>   | `FFlagDebug`           | `Boolean`  | `Fast Flag for Debugging`          |
 >>   | `FFlagUser`            | `Boolean`  | `User-specific Fast Flag`          |
 >>   | `FFlagRender`          | `Boolean`  | `Rendering-specific Fast Flag`     |
@@ -42,8 +42,6 @@
 >>   | `FFlagGraphics`        | `Boolean`  | `Graphics-related Fast Flag`       |
 >>   | `FFlagNetwork`         | `Boolean`  | `Network-related Fast Flag`        |
 >>   | `FFlagPerf`            | `Boolean`  | `Performance-related Fast Flag`    |
->>   | `DFIntClient`          | `Int`      | `Debug Fast Integer for Client`    |
->>   | `DFIntServer`          | `Int`      | `Debug Fast Integer for Server`    |
 >>   | `DFStringTelemetry`    | `String`   | `Debug Fast String for Telemetry`  |  
 >
 > What Are Custom Mods?  
