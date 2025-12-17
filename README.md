@@ -300,7 +300,7 @@ Before you see the Fast Flags important points:
   "FFlagUserHideCharacterParticlesInFirstPerson": "True",
   "FFlagHandleAltEnterFullscreenManually": "False",
   "FLogNetwork": "7",
-  "DFIntConnectionMTUSize": 1472,
+  "DFIntConnectionMTUSize": "1472",
   "FIntRakNetResendBufferArrayLength": "128",
   "FFlagOptimizeNetwork": "True",
   "FFlagOptimizeNetworkRouting": "True",
