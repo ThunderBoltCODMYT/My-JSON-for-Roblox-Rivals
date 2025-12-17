@@ -1,5 +1,30 @@
+# My-JSON-For-Roblox-Rivals
+
+<details>
+    <summary>Headers navigation list of this repository: </summary>
+
+- [My-JSON-For-Roblox-Rivals](#my-json-for-roblox-rivals)
+- [Any BootStrapper in general, How to Use:](#any-bootstrapper-in-general-how-to-use)
+- [Normal Roblox Bootstrapper How to Use:](#normal-roblox-bootstrapper-how-to-use)
+- [Actual JSON Code:](#actual-json-code)
+- [Sections Navigation List](#sections-navigation-list)
+- [Task Scheduling and Threading](#task-scheduling-and-threading)
+- [Graphics \& Rendering](#graphics--rendering)
+- [Debug \& Determinism](#debug--determinism)
+- [Terrain \& Voxel](#terrain--voxel)
+- [Telemetry \& Analytics](#telemetry--analytics)
+- [Networking](#networking)
+- [Geometry \& CSG](#geometry--csg)
+- [FFlag Presets](#fflag-presets)
+- [Files already described in the README](#files-already-described-in-the-readme)
+- [The only whitelist FFlags](#the-only-whitelist-fflags)
+
+</details>
+
+---
+
 > [!IMPORTANT]
-> Fast Flags are internal switches used by Roblox Devs. and Engineers. They are to be used very carefully and only if you know what you are doing. Me myself as an learning roblox engineer wanted to share my FFlags with the community of Roblox. I use these fast flags specifically for Roblox Rivals but they have worked well in other games aswell. If you do not know what you are doing I would strictly reccomend you to **NOT USE** these fast flags.
+> Fast Flags are internal switches used by Roblox Devs. and Engineers. They are to be used very carefully and only if you know what you are doing. Me myself as an learning roblox engineer wanted to share my FFlags with the community of Roblox. I use these fast flags specifically for Roblox Rivals but they have worked well in other games aswell. If you do not know what you are doing I would strictly recommend you to **NOT USE** these fast flags.
 
 > [!IMPORTANT]
 > ### Fast Flags do not violate the roblox TOS unless they mess with Server logic or exploits
@@ -305,7 +330,7 @@ Before you see the Fast Flags important points:
   "FFlagUserHideCharacterParticlesInFirstPerson": "True",
   "FFlagHandleAltEnterFullscreenManually": "False",
   "FLogNetwork": "7",
-  "DFIntConnectionMTUSize": "1472",
+  "DFIntConnectionMTUSize": 1472,
   "FIntRakNetResendBufferArrayLength": "128",
   "FFlagOptimizeNetwork": "True",
   "FFlagOptimizeNetworkRouting": "True",
@@ -445,13 +470,13 @@ Before you see the Fast Flags important points:
 
 ## Sections Navigation List
 
-- [Task Scheduling and Threading](#task-scheduling-and-threading)  
-- [Graphics & Rendering](#graphics--rendering)  
-- [Debug & Determinism](#debug--determinism)  
-- [Terrain & Voxel](#terrain--voxel)  
-- [Telemetry & Analytics](#telemetry--analytics)  
-- [Networking](#networking)  
-- [Geometry & CSG](#geometry--csg) 
+- [Task Scheduling and Threading](#task-scheduling-and-threading)
+- [Graphics and Rendering](#graphics-and-rendering)
+- [Debug and Determinism](#debug-and-determinism)
+- [Terrain and Voxel](#terrain-and-voxel)
+- [Telementry and Analytics](#telementry-and-analytics)
+- [Networking](#networking)
+- [Geometry and CSG](#geometry-and-csg)
 
 ## Task Scheduling and Threading
 
