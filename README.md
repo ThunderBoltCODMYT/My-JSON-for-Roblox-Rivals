@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> Fast Flags are internal switches used by Roblox Devs. and Engineers. They are to be used very carefully and only if you know what you are doing. Me myself as an learning roblox engineer wanted to share my FFlags with the community of Roblox. I use these fast flags specifically for Roblox Rivals. If you do not know what you are doing I would strictly reccomend you to **NOT USE** these fast flags.
+> Fast Flags are internal switches used by Roblox Devs. and Engineers. They are to be used very carefully and only if you know what you are doing. Me myself as an learning roblox engineer wanted to share my FFlags with the community of Roblox. I use these fast flags specifically for Roblox Rivals but they have worked well in other games aswell. If you do not know what you are doing I would strictly reccomend you to **NOT USE** these fast flags.
 
 > [!IMPORTANT]
 > ### Fast Flags do not violate the roblox TOS unless they mess with Server logic or exploits
@@ -7,7 +7,7 @@
 > ### This repository is for educational and testing purposes only and is not endorsed by Roblox Corporation. Use at your own risk.
 
 > [!WARNING]
-> ### certain Fast Flags are a bannable offense in some games.
+> ### certain Fast Flags are a bannable offense in some experiences/games on roblox.
 
 > [!NOTE]
 > ### Fast Flags are only used to make client side changes using them for anything like messing with server logic or exploits will get you banned.
@@ -42,7 +42,56 @@
 >>   | `FFlagGraphics`        | `Boolean`  | `Graphics-related Fast Flag`       |
 >>   | `FFlagNetwork`         | `Boolean`  | `Network-related Fast Flag`        |
 >>   | `FFlagPerf`            | `Boolean`  | `Performance-related Fast Flag`    |
->>   | `DFStringTelemetry`    | `String`   | `Debug Fast String for Telemetry`  |  
+>>   | `DFStringTelemetry`    | `String`   | `Debug Fast String for Telemetry`  |
+> 
+>    in total there are only four data types supported those are:
+> <table>
+>	<tr>
+>		<th>Label</th>
+>		<th>Type</th>
+>	</tr>
+>	<tr>
+>		<td>Flag</td>
+>		<td>bool</td>
+>	</tr>
+>	<tr>
+>		<td>Int</td>
+>		<td>int</td>
+>	</tr>
+>	<tr>
+>		<td>String</td>
+>		<td>string</td>
+>	</tr>
+>	<tr>
+>		<td>Log</td>
+>		<td>byte</td>
+>	</tr>
+> </table>
+>
+> There are also behavioral classifications:
+>
+> <table>
+>	<tr>
+>		<th>Prefix</th>
+>		<th>Label</th>
+>		<th>Description</th>
+>	</tr>
+>	<tr>
+>		<td>F</td>
+>		<td>Fast</td>
+>		<td>A regular fast-variable that is initialized once<br/>and does not change until a new session begins.</td>
+>	</tr>
+>	<tr>
+>		<td>DF</td>
+>		<td>Dynamic Fast</td>
+>		<td>A fast-variable that can change at run-time, and<br/>automatically updates every 5 minutes.</td>
+>	</tr>
+>	<tr>
+>		<td>SF</td>
+>		<td>Synchronized Fast</span></td>
+>		<td>A fast-variable that is loaded by the server and<br/>sent to the client.</td>
+>	</tr>
+> </table>
 >
 > What Are Custom Mods?  
 >> Custom mods are user-defined configurations that override default FastFlag values. These mods are:
