@@ -233,7 +233,7 @@ Roblox Installation Directory
 > - The values are not in "" .
 > - the `boolean` values first letter does not have to be capital - true/false  
 > - (if null is allowed or not i do not know)but again even in raw `json` values like `Numbers`, `booleans`, `null` values, and `arrays` and `objects` dont have to be quoted, while all other values in `strings` have to be quoted in "" .  
-> **In this README I am using Roblox's `ClientAppSettings.json` file `syntax`, however you can use any `syntax` the raw `JSON` `syntax` or Roblox's `ClientSettings.json` `syntax` both will work with no issues(not confirmed, sometimes works sometimes dosent).**
+> **In this README I am using Roblox's `ClientAppSettings.json` file `syntax`, the raw `JSON` syntax will not work, but the one roblox requires is guaranteed to work.**
 
 
 >[!NOTE]
@@ -448,7 +448,7 @@ Before you see the Fast Flags important points:
 
 ```json
 {
-  "DFIntTaskSchedulerTargetFPS" : "180"
+  "DFIntTaskSchedulerTargetFps" : "180"
 }
 ```
 
