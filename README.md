@@ -159,13 +159,13 @@
 >>
 >> a Small Whitelist of about 20~ validated fast flags exist:  
 >>> These are the flags Roblox currently allows in ClientAppSettings.json:  
->>> <details><summary>🧱 **Geometry**  </summary>
+>>> <details><summary>🧱 <b>Geometry</b>  </summary>
 >>>> - DFIntCSGLevelOfDetailSwitchingDistance  
 >>>> - DFIntCSGLevelOfDetailSwitchingDistanceL12  
 >>>> - DFIntCSGLevelOfDetailSwitchingDistanceL23  
 >>>> - DFIntCSGLevelOfDetailSwitchingDistanceL34
 >>>> </details>
->>> <details><summary>🎨 **Rendering**  </summary>
+>>> <details><summary>🎨 <b>Rendering</b>  </summary>
 >>>> - FFlagHandleAltEnterFullscreenManually  
 >>>> - DFFlagTextureQualityOverrideEnabled  
 >>>> - DFIntTextureQualityOverride  
@@ -180,10 +180,10 @@
 >>>> - FFlagDebugGraphicsPreferVulkan  
 >>>> - FFlagDebugGraphicsPreferOpenGL
 >>>> </details>
->>> <details><summary>🖥️ **User Interface**  </summary>
+>>> <details><summary>🖥️ <b>User Interface</b>  </summary>
 >>>> - FIntGrassMovementReducedMotionFactor  
 >>> </details>
->>> <details><summary>⚠️ **Notes**  </summary>
+>>> <details><summary>⚠️ <b>Notes</b> </summary>
 >>>> - Any flag not on this list will be ignored, even if injected correctly.  
 >>>> - Roblox may update this list at any time without warning.  
 >>>> - Roblox Studio is unaffected—you can still use any FastFlags there. </details> 
