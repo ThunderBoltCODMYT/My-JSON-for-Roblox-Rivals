@@ -1,5 +1,8 @@
 # My-JSON-For-Roblox-Rivals
 
+> [!NOTE]
+> This repo is currently not managed;
+
 <details>
     <summary>Headers navigation list of this repository: </summary>
 
